@@ -1,11 +1,59 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <link href="main-style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main-style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 </head>
-    <body>
+<body>
+    <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
+        <div class="row">
+            <div class="col" style="padding: 1%;">
+                <i class="fas fa-toilet fa-2x"></i>
+            </div>
+            <div class="col-4" style="padding: 1%;">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">buttons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">buttons</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col " style="padding: 1%; text-align:right;">
+
+                <form class="form-inline" style="text-align:right;">
+                    <div class="form-horizontal">
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="fas fa-shopping-cart fa-1x"></i>
+                        </button>
+                        <input type="text" id="search-input" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+
+
+                        <button type="button" class="btn btn-outline-dark" id="search-btn">
+                            <i class="fas fa-search fa-1x"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+    <script>
+        $("#search-input").hide();
+        $("#search-btn").hover(function () {
+            $("#slide").animate({ width: 'toggle' }, 350);
+        });
+    </script>
+
+
 
         <h1>Dab emoji :)))</h1>
         
