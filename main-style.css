@@ -11,11 +11,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
-/* remove rounding from cards, buttons and inputs */
-/*.card, .btn, .form-control {
+/* remove rounding from cards, buttons and inputs 
+.card, .btn, .form-control{
     border-radius: 0;
 }
-*/
+    */
+
 #main-header {
     background-color: #EAEAEA;
 }
