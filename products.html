@@ -14,119 +14,175 @@
 </head>
 
 <body>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="d-flex p-4">
-                <figure class="col ">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
+    <header>
+        <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
+            <div class="row">
+                <div class="col" style="padding: 1%;">
+                    <i class="fas fa-toilet fa-2x"></i>
+                </div>
+                <div class="col-4" style="padding: 0%;">
+                    <div class="Jhead">
+                        <nav>
+                            <ul>
+                                <li><a href="?">Home</a></li>
+                                <li><a href="?">Shop</a></li>
+                                <li><a href="?">Button</a></li>
+                                <li><a href="?">Button</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                </figure>
+                </div>
+                <div class="col " style="padding: 1%; text-align:right;">
+                    <div class="form-horizontal">
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="fas fa-shopping-cart fa-1x"></i>
+                        </button>
+                        <input type="text" id="search-input" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
 
-                <figure class="col">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
-                </figure>
-
-                <figure class="col">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
+                        <button type="button" class="btn btn-outline-dark" id="search-btn">
+                            <i class="fas fa-search fa-1x"></i>
+                        </button>
                     </div>
-                </figure>
+                </div>
+            </div>
+        </div>
+        <script>
+            $("#search-input").hide();
+            $("#search-btn").hover(function () {
+                $("#slide").animate({ width: 'toggle' }, 350);
+            });</script>
+    </header>
+
+    <div class="container-fluid mt-5">
+        <div class="row m-4">
+            <div class="col-3 mt-4">
+                <div class="col">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Huarache</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Huarache</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Huarache</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Huarache</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="row">
+                    <div class="col d-flex p-4">
+                        <figure class="col ">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </figure>
+
+                        <figure class="col">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                        </figure>
+
+                        <figure class="col">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col d-flex p-4">
+                        <figure class="col ">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </figure>
+
+                        <figure class="col">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                        </figure>
+
+                        <figure class="col">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col d-flex p-4">
+                        <figure class="col ">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </figure>
+
+                        <figure class="col">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                        </figure>
+
+                        <figure class="col">
+                            <div class="wrapper">
+                                <a href="http://burnie.com/">
+                                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                                    <div class="overlay">
+                                        <h1><div class="content">Image Overlay</div></h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
-        <div class="row">
-            <div class="d-flex p-4">
-                <figure class="col ">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
-                    </div>
-                </figure>
 
-                <figure class="col">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
-                </figure>
-
-                <figure class="col">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
-                    </div>
-                </figure>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="d-flex p-4">
-                <figure class="col ">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
-                    </div>
-                </figure>
-
-                <figure class="col">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
-                </figure>
-
-                <figure class="col">
-                    <div class="wrapper">
-                        <a href="http://burnie.com/">
-                            <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
-                            <div class="overlay">
-                                <h1><div class="content">Image Overlay</div></h1>
-                            </div>
-                        </a>
-                    </div>
-                </figure>
-            </div>
-        </div>
     </div>
-   
+
 
 
 
