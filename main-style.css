@@ -101,3 +101,10 @@ body {
             text-decoration: none;
             transition: background-color 200ms, color 200ms;
         }
+
+.fa-shopping-cart {
+    color: white;
+}
+.fa-search {
+    color: white;
+}
