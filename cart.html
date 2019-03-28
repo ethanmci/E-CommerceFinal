@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -38,7 +38,7 @@
                     <div class="Jhead">
                         <nav>
                             <ul>
-                                <li><a href="?">Home</a></li>
+                                <li><a href="home.html">Home</a></li>
                                 <li><a href="?">Shop</a></li>
                                 <li><a href="?">Button</a></li>
                                 <li><a href="?">Button</a></li>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="col " style="padding: 1%; text-align:right;">
                     <div class="form-horizontal">
-                        <button type="button" class="btn btn-outline-dark">
+                        <button type="button" class="btn btn-outline-dark btn-active">
                             <i class="fas fa-shopping-cart fa-1x"></i>
                         </button>
                         <input type="text" id="search-input" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
@@ -64,22 +64,54 @@
             $("#search-input").hide();
             $("#search-btn").hover(function () {
                 $("#slide").animate({ width: 'toggle' }, 350);
-            });</script>
+            });
+        </script>
     </header>
-    <div style="padding-left:20%; padding-right: 20%; padding-top:5%; display:block; height:20%;">
-        <div class="row my-auto" style="text-align:center; background-color:grey;">
-            <div class="col-1"><h4></h4></div>
-            <div class="col-2"></div> <!-- image here -->
-            <div class="col-4"><h4 >Product</h4></div>
-            <div class="col-2"><h4>Price</h4></div>
-            <div class="col-3"><h4>Quantity</h4></div>
+    <div style="padding-left:20%; padding-right: 20%; padding-top:3%;">
+
+        <div class="row my-auto" style="text-align:center; background-color:black; color:white; font-weight:800; height:70px;">
+            <div class="col-1 my-auto"><h4></h4></div>
+            <div class="col-2 my-auto"></div> <!-- image here -->
+            <div class="col-4 my-auto">PRODUCT</div>
+            <div class="col-2 my-auto">PRICE</div>
+            <div class="col-3 my-auto">QUANTITY</div>
         </div>
         <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
-            <div class="col-1 my-auto"><h4><i class="fas fa-times-circle" id="close-button-cart"></i></h4></div>
-            <div class="col-2 my-auto"><img class="img-thumbnail" src="..\E-CommerceFinal\tempImage\yzyreal.jpg"/></div> <!-- image here -->
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
             <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
             <div class="col-2 my-auto"><h4>$99.99</h4></div>
-            <div class="col-3 my-auto"><input style="width:100%;"/></div>
+            <div class="col-3 my-auto"><input style="width:100%;" /></div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto"><input style="width:100%;" /></div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto"><input style="width:100%;" /></div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"></div>
+            <div class="col-2 my-auto"></div> <!-- image here -->
+            <div class="col-4 my-auto"></div>
+            <div class="col-2 my-auto"><h4>$TOTAL</h4></div>
+            <div class="col-3 my-auto text-right"></div>
+        </div>
+
+        <div class="row p-5">
+            <div class="col my-auto text-left">
+                <button type="button" class="btn btn-dark btn-lg" style="font-weight: bold;">Return to shop </button>
+            </div>
+            <div class="col my-auto text-right">
+                <button type="button" class="btn btn-success btn-lg" style="font-weight: bold;">Checkout </button>
+            </div>
         </div>
     </div>
 </body>
