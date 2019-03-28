@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    border-radius: 0 !important;
+    font-family: 'Montserrat', sans-serif; 
 }
+
+
 
 html, body {
     height: 100%;
@@ -18,7 +22,15 @@ body {
     top: 45%;
     left: 0;
     width: 100%;
-}
+    padding-left: 30%;
+    padding-right: 30%;
+    font-weight: bold;
+    font-size: 50px;
+}#hero-text span {
+    color:black;
+    background:white;
+ }
+
 
 /* remove rounding from cards, buttons and inputs 
 .card, .btn, .form-control{
@@ -181,4 +193,9 @@ body {
     background-color: #EDF2F6;
     text-decoration: none;
     transition: background-color 100ms, color 300ms;
+}
+
+.cart-icon {
+    padding: 2%;
+    border: 2px solid black;
 }
