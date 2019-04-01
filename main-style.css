@@ -21,24 +21,25 @@ a {
     text-decoration: none;
 }
 
-nav {
+
+#main-header nav {
     font-family: monospace;
     position: relative;
 }
-    nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+#main-header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    nav li {
-        display: inline-block;
-        margin-left: 0;
-        padding-top: 0;
-        position: relative;
-    }
+#main-header nav li {
+    display: inline-block;
+    margin-left: 0;
+    padding-top: 0;
+    position: relative;
+}
 
-    nav a {
+#main-header nav a {
         display: block;
         color: white;
         background-color: black;
@@ -49,22 +50,22 @@ nav {
         transition: background-color 200ms, color 200ms;
     }
 
-        nav a:hover {
-            color: black;
-            background-color: white;
-            text-decoration: none;
-            transition: background-color 200ms, color 200ms;
-        }
+#main-header nav a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    transition: background-color 200ms, color 200ms;
+}
 
 
-nav ul {
+#main-header nav ul {
     background: black;
     list-style: none;
     margin: 0;
     padding-left: 0;
 }
 
-nav ul li {
+#main-header nav ul li {
     color: #fff;
     background: black;
     display: block;
@@ -75,38 +76,32 @@ nav ul li {
     transition-duration: 0.2s;
 }
 
-    nav ul li a {
-        color: #fff;
-    }
+#main-header nav ul li a {
+    color: #fff;
+}
 
-    nav ul li:hover {
-        background: none;
-        cursor: pointer;
-    }
-    
-    ul li ul {
+#main-header nav ul li:hover {
     background: none;
-    visibility: hidden;
-    opacity: 0;
+    cursor: pointer;
+}
+
+#main-header ul li ul {
+    background: none;
     min-width: 0;
     position: relative;
     transition: all 0.2s ease;
     margin-top: 0;
     left: 0;
-    display: none;
+    visibility: visible;
+    opacity: 1;
+    display: block;
 }
 
-    ul li:hover > ul,
-    ul li ul:hover {
-        visibility: visible;
-        opacity: 1;
-        display: block;
-    }
 
-    ul li ul li {
-        clear: both;
-        width: 100%;
-    }
+#main-header ul li ul li {
+    clear: both;
+    width: 100%;
+}
 
 
 .fa-shopping-cart {
