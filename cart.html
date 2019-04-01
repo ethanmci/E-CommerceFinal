@@ -76,37 +76,19 @@
                 </div>
             </div>
         </div>
-        <script>
-            $("#search-input").hide();
-            $("#search-btn").hover(function () {
-                $("#slide").animate({ width: 'toggle' }, 350);
-            });
 
 
-            //Keeps track of the values
-            var vn = new Vue({
-                el: '#vue-app',
-                data: {
-                    product: 1
 
-                },
-                methods: {
-                    add: function () {
-                        this.product++;
-                    },
-                    subtract: function () {
-                        if (this.product > 0) {
-                            this.product--;
-                        }
-                    }
-
-                }
-            });
-            
-
-
-        </script>
     </header>
+    <script>
+        $("#search-input").hide();
+        $("#search-btn").hover(function () {
+            $("#slide").animate({ width: 'toggle' }, 350);
+        });
+
+    </script>
+
+
     <div style="padding-left:20%; padding-right: 20%; padding-top:3%;">
         <!-- Column label div  -->
         <div class="row my-auto" style="text-align:center; background-color:black; color:white; font-weight:800; height:70px;">
@@ -122,7 +104,7 @@
             <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
             <div class="col-2 my-auto"><h4>$99.99</h4></div>
             <div class="col-3 my-auto align-items-center">
-                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;" >
+                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
                     <div class="input-group-prepend" id="vue-app" style="border: solid 1px; border-color:black;">
                         <button class="btn btn-dark btn-md" v-on:click="subtract" type="button">
                             <i class="fas fa-minus" style="color: white;"></i>
@@ -242,6 +224,35 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+
+
+
+        //Keeps track of the values
+        var vn = new Vue({
+            el: '#vue-app',
+            data: {
+                product: 1
+
+            },
+            methods: {
+                add: function () {
+                    this.product++;
+                },
+                subtract: function () {
+                    if (this.product > 0) {
+                        this.product--;
+                    }
+                }
+
+            }
+        });
+
+
+
+    </script>
 
 </body>
 </html>
