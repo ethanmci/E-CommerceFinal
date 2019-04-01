@@ -1,0 +1,118 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main-style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        #close-button-cart {
+            -o-transition: .2s;
+            -ms-transition: .2s;
+            -moz-transition: .2s;
+            -webkit-transition: .2s;
+            transition: .2s;
+        }
+
+            #close-button-cart:hover {
+                color: tomato;
+            }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body>
+    <header>
+        <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
+            <div class="row">
+                <div class="col" style="padding: 1%;">
+                    <i class="fas fa-toilet fa-2x"></i>
+                </div>
+                <div class="col-4" style="padding: 0%;">
+                    <div class="Jhead">
+                        <nav>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="?">Shop</a></li>
+                                <li><a href="?">Button</a></li>
+                                <li><a href="?">Button</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col " style="padding: 1%; text-align:right;">
+                    <div class="form-horizontal">
+                        <button type="button" class="btn btn-outline-dark btn-active">
+                            <i class="fas fa-shopping-cart fa-1x"></i>
+                        </button>
+                        <input type="text" id="search-input" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+
+                        <button type="button" class="btn btn-outline-dark" id="search-btn">
+                            <i class="fas fa-search fa-1x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $("#search-input").hide();
+            $("#search-btn").hover(function () {
+                $("#slide").animate({ width: 'toggle' }, 350);
+            });
+        </script>
+    </header>
+    <div style="padding-left:20%; padding-right: 20%; padding-top:3%;">
+
+        <div class="row my-auto" style="text-align:center; background-color:black; color:white; font-weight:800; height:70px;">
+            <div class="col-1 my-auto"><h4></h4></div>
+            <div class="col-2 my-auto"></div> <!-- image here -->
+            <div class="col-4 my-auto">PRODUCT</div>
+            <div class="col-2 my-auto">PRICE</div>
+            <div class="col-3 my-auto">QUANTITY</div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto"><input style="width:100%;" /></div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto"><input style="width:100%;" /></div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto"><input style="width:100%;" /></div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"></div>
+            <div class="col-2 my-auto"></div> <!-- image here -->
+            <div class="col-4 my-auto"></div>
+            <div class="col-2 my-auto"><h4>$TOTAL</h4></div>
+            <div class="col-3 my-auto text-right"></div>
+        </div>
+
+        <div class="row p-5">
+            <div class="col my-auto text-left">
+                <button type="button" class="btn btn-dark btn-lg" style="font-weight: bold;">Return to shop </button>
+            </div>
+            <div class="col my-auto text-right">
+                <button type="button" class="btn btn-success btn-lg" style="font-weight: bold;">Checkout </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
