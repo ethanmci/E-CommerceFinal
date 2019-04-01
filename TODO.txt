@@ -1,0 +1,6 @@
+homepage:
+- fix toggle slide
+
+shopping cart 
+- functional addition buttons
+

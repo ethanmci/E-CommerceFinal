@@ -27,9 +27,9 @@
                     <nav role="Navigation">
                         <ul>
                             <li><a href="../E-CommerceFinal/home.html">Home</a></li>
-                            <li>
-                                <a href="../E-CommerceFinal/products.html">Shop for Memes   <i class="fa fa-caret-down"></i></a>
-                                <ul class="dropdown">
+                            <li id="dropdown-toggle">
+                                <a href="../E-CommerceFinal/products.html">Shop for Memes  <i class="fa fa-caret-down"></i></a>
+                                <ul id="dropdown">
                                     <li><a href="#">Trending Now</a></li>
                                     <li><a href="#">Dank</a></li>
                                     <li><a href="#">Screenshots</a></li>
@@ -62,10 +62,15 @@
             </div>
         </div>
         <script>
-            $("#search-input").hide();
-            $("#search-btn").hover(function () {
-                $("#slide").animate({ width: 'toggle' }, 350);
-            });</script>
+            $('#search-input').hide();
+            $('#dropdown').hide();
+            $('#dropdown-toggle').hover(
+                function () {
+                    console.log("Opening hidden menu");
+                    $('#dropdown').slideDown(200);
+                }
+            );
+        </script>
     </header>
     <!----------------------------------------------------------------------------------CAROUSEL CAROUSEL---------------------------------------------------------------------------------->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
