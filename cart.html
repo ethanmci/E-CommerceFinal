@@ -82,6 +82,29 @@
                 $("#slide").animate({ width: 'toggle' }, 350);
             });
 
+
+            //Keeps track of the values
+            var vn = new Vue({
+                el: '#vue-app',
+                data: {
+                    product: 1
+
+                },
+                methods: {
+                    add: function () {
+                        this.product++;
+                    },
+                    subtract: function () {
+                        if (this.product > 0) {
+                            this.product--;
+                        }
+                    }
+
+                }
+            });
+            
+
+
         </script>
     </header>
     <div style="padding-left:20%; padding-right: 20%; padding-top:3%;">
@@ -99,14 +122,16 @@
             <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
             <div class="col-2 my-auto"><h4>$99.99</h4></div>
             <div class="col-3 my-auto align-items-center">
-                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
-                    <div class="input-group-prepend" style="border: solid 1px; border-color:black;">
-                        <button class="btn btn-dark btn-md" type="button">
+                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;" >
+                    <div class="input-group-prepend" id="vue-app" style="border: solid 1px; border-color:black;">
+                        <button class="btn btn-dark btn-md" v-on:click="subtract" type="button">
                             <i class="fas fa-minus" style="color: white;"></i>
                         </button>
-                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
+
+                        <input type="text" class="form-control" placeholder="" aria-label="" v-model="product" aria-describedby="inputGroup-sizing-default">
+
                         <div class="input-group-append">
-                            <button class="btn btn-dark btn-md" type="button">
+                            <button class="btn btn-dark btn-md" v-on:click="add" type="button">
                                 <i class="fas fa-plus" style="color: white;"></i>
                             </button>
                         </div>
@@ -114,6 +139,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
             <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
             <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
@@ -216,7 +242,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 </html>
