@@ -81,29 +81,40 @@
             <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
             <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
             <div class="col-2 my-auto"><h4>$99.99</h4></div>
-            <div class="col-3 my-auto"><input style="width:100%;" /></div>
+            <div class="col-3 my-auto align-items-center">
+                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%; ">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-danger btn-md" type="button"><i class="fas fa-minus"></i></button>
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
+                        <div class="input-group-append">
+                            <button class="btn btn-success btn-md" type="button"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
             <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
             <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
             <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
             <div class="col-2 my-auto"><h4>$99.99</h4></div>
-            <div class="col-3 my-auto"><input style="width:100%;" /></div>
+            <div class="col-3 my-auto align-items-center">
+                <div class="container" style="display:inline-block ;padding-right: 25%; padding-left: 25%;">
+                    <div class="row justify-content-md-center">
+                        <div class="col-sm-auto">
+                            <button class="btn btn-outline-secondary btn-md" type="button" style="border: solid 1px; border-color:#C4C4C4;"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div class="col-sm-auto">
+                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="col-sm-auto">
+                            <button class="btn btn-outline-secondary btn-md" type="button" style="border: solid 1px; border-color:#C4C4C4;"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
-            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
-            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
-            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
-            <div class="col-2 my-auto"><h4>$99.99</h4></div>
-            <div class="col-3 my-auto"><input style="width:100%;" /></div>
-        </div>
-        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
-            <div class="col-1 my-auto"></div>
-            <div class="col-2 my-auto"></div> <!-- image here -->
-            <div class="col-4 my-auto"></div>
-            <div class="col-2 my-auto"><h4>$TOTAL</h4></div>
-            <div class="col-3 my-auto text-right"></div>
-        </div>
+        
 
         <div class="row p-5">
             <div class="col my-auto text-left">
@@ -114,5 +125,7 @@
             </div>
         </div>
     </div>
+
+    
 </body>
 </html>
