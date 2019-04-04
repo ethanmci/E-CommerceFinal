@@ -61,23 +61,33 @@
                     </nav>
                 </div>
                 <!--SECONDARY NAV BUTTONS-->
-                <div class="col " style="padding: 1%; text-align:right;">
-                    <div class="form-horizontal">
-                        <button type="button" class="btn btn-outline-dark">
-                            <a href="../E-CommerceFinal/cart.html">
-                                <i class="fas fa-shopping-cart fa-1x"></i>
-                            </a>
-                        </button>
-                        <input type="text" id="search-input" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                <div class="col text-right" style="padding: 1%;">
+                    <div class="form-inline" style="float: right;">
+                        <a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
+                            <i class="fas fa-shopping-cart fa-1x"></i>
+                        </a>
+                        <input type="text" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
                         <button type="button" class="btn btn-outline-dark" id="search-btn">
                             <i class="fas fa-search fa-1x"></i>
                         </button>
                     </div>
+
+
                 </div>
             </div>
+
         </div>
         <script>
             $('#search-input').hide();
+
+            $(function () {
+                var searchBtn = $('#search-btn');
+                var searchIn = $('#search-input');
+                searchBtn.click(function () {
+                    searchIn.toggle("slide").focus();
+                });
+            });
+
             $('#dropdown').hide();
             $('#dropdown-toggle').hover(
                 function () {
@@ -86,7 +96,7 @@
                 },
                 function () {
                     console.log("Closing hidden menu");
-                    $('#dropdown').slideUp(200);
+                    $('#dropdown').slideUp(300);
                 }
             );
         </script>
