@@ -222,7 +222,7 @@ a {
 .desc {
     padding: 5px;
     text-align: left;
-    color: #C4C9CD;
+    color: #9b9fa3;
     background-color: #EDF2F6;
     text-decoration: none;
     transition: background-color 100ms, color 300ms;
@@ -234,6 +234,16 @@ a {
 .under {
     padding-left: 5px;
     padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: left;
+    color: black;
+    background-color: #EDF2F6;
+    text-decoration: none;
+    transition: background-color 100ms, color 300ms;
+}
+.rating {
+    padding-left: 5px;
+    padding-top: 0;
     padding-bottom: 40px;
     text-align: left;
     color: black;
