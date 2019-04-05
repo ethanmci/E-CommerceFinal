@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html lang="en">
 <head>
+    <link rel="icon" href="../E-CommerceFinal/tempImage/yosh.jpg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -37,9 +38,9 @@
                 <div class="col" style="padding: 1%;">
                     <i class="fas fa-toilet fa-2x"></i>
                 </div>
-                <div class="col-4" style="padding: 0%;">
+                <div class="col-10" style="padding: 0%;">
                     <!--MAIN NAV BUTTONS-->
-                    <nav role="Navigation">
+                    <nav class="navigation" role="Navigation">
                         <ul>
                             <li><a href="../E-CommerceFinal/home.html">Home</a></li>
                             <li id="dropdown-toggle">
@@ -59,7 +60,9 @@
                             <li><a href="#">About</a></li>
                         </ul>
                     </nav>
+
                 </div>
+              
                 <!--SECONDARY NAV BUTTONS-->
                 <div class="col text-right" style="padding: 1%;">
                     <div class="form-inline" style="float: right;">
@@ -71,8 +74,11 @@
                             <i class="fas fa-search fa-1x"></i>
                         </button>
                     </div>
+
+
                 </div>
             </div>
+
         </div>
         <script>
             $('#search-input').hide();
@@ -81,7 +87,7 @@
                 var searchBtn = $('#search-btn');
                 var searchIn = $('#search-input');
                 searchBtn.click(function () {
-                    searchIn.toggle("slide").focus();
+                    searchIn.toggle("slide").focus()    ;  
                 });
             });
 
@@ -98,8 +104,34 @@
             );
         </script>
     </header>
-
     <style>
+        @media (max-width: 1500px) {
+            #main-header nav {
+                margin-left: 25%;
+            }
+        }
+
+        @media (max-width: 1300px) {
+            #main-header nav {
+                margin-left: 20%;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #main-header nav {
+                margin-left: 10%;
+            }
+        }
+
+        @media (max-width: 850px) {
+            #main-header nav {
+                margin-left: 0%;
+            }
+        }
+
+       
+            
+
         @media (max-width: 890px) {
             *, body {
                 font-size: 1rem !important;
@@ -109,7 +141,10 @@
                 visibility: collapse;
                 position: absolute;
                 display: none;
-            }       
+            }
+            #main-header nav {
+                visibility: collapse;
+            }
         }
         @media (min-width: 891px) {
             #temp-desktop-render {
