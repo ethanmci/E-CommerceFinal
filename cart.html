@@ -37,9 +37,9 @@
                 <div class="col" style="padding: 1%;">
                     <i class="fas fa-toilet fa-2x"></i>
                 </div>
-                <div class="col-4" style="padding: 0%;">
+                <div class="col-10" style="padding: 0%;">
                     <!--MAIN NAV BUTTONS-->
-                    <nav role="Navigation">
+                    <nav class="navigation" role="Navigation">
                         <ul>
                             <li><a href="../E-CommerceFinal/home.html">Home</a></li>
                             <li id="dropdown-toggle">
@@ -59,7 +59,9 @@
                             <li><a href="#">About</a></li>
                         </ul>
                     </nav>
+
                 </div>
+              
                 <!--SECONDARY NAV BUTTONS-->
                 <div class="col text-right" style="padding: 1%;">
                     <div class="form-inline" style="float: right;">
@@ -71,9 +73,45 @@
                             <i class="fas fa-search fa-1x"></i>
                         </button>
                     </div>
+
+
                 </div>
             </div>
+
         </div>
+        <style>
+            @media (max-width: 1500px) {
+                #main-header nav {
+                    margin-left: 25%;
+                }
+            }
+
+            @media (max-width: 1300px) {
+                #main-header nav {
+                    margin-left:20%;
+                }
+            }
+
+            @media (max-width: 1000px) {
+                #main-header nav {
+                    margin-left: 10%;
+                }
+            }
+            @media (max-width: 850px) {
+                #main-header nav {
+                    margin-left: 0%;
+                }
+            }
+            @media (max-width: 720px) {
+                #main-header nav {
+                    visibility: collapse;
+                }
+            }
+
+          
+            
+
+        </style>
         <script>
             $('#search-input').hide();
 
@@ -81,7 +119,7 @@
                 var searchBtn = $('#search-btn');
                 var searchIn = $('#search-input');
                 searchBtn.click(function () {
-                    searchIn.toggle("slide").focus();
+                    searchIn.toggle("slide").focus()    ;  
                 });
             });
 
@@ -98,7 +136,6 @@
             );
         </script>
     </header>
-
     <style>
         @media (max-width: 890px) {
             *, body {
