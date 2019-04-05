@@ -4,3 +4,4 @@ homepage:
 shopping cart 
 - functional addition buttons
 
+https://alligator.io/vuejs/vue-media-queries/ !!! VUE RESPONSIVE RENDERING ! !!!
