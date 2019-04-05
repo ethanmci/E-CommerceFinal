@@ -19,10 +19,10 @@
         <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
             <div class="row">
                 <!--LOGO-->
-                <div class="col" style="padding: 1%;">
+                <div class="col my-auto" style="padding: 1%;">
                     <i class="fas fa-toilet fa-2x"></i>
                 </div>
-                <div class="col-10" style="padding: 0%;">
+                <div class="col-10" style="padding: 0%;" id="center-col">
                     <!--MAIN NAV BUTTONS-->
                     <nav class="navigation" role="Navigation">
                         <ul>
@@ -48,8 +48,8 @@
                 </div>
               
                 <!--SECONDARY NAV BUTTONS-->
-                <div class="col text-right" style="padding: 1%;">
-                    <div class="form-inline" style="float: right;">
+                <div class="col text-right my-auto" style="padding: 1%;">
+                    <div id="header-nav-btn" class="form-inline" style="float: right;">
                         <a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
                             <i class="fas fa-shopping-cart fa-1x"></i>
                         </a>
@@ -57,10 +57,17 @@
                         <button type="button" class="btn btn-outline-dark" id="search-btn">
                             <i class="fas fa-search fa-1x"></i>
                         </button>
+
+
                     </div>
 
-
+                    <div class="hamburger" style="float: right;">
+                        <a class="btn btn-outline-dark" href="../E-CommerceFinal/home.html" role="button">
+                            <i class="fas fa-bars fa-2x" style="color:white;"></i>
+                        </a>
+                    </div>
                 </div>
+                
             </div>
 
         </div>
@@ -69,11 +76,19 @@
                 #main-header nav {
                     margin-left: 25%;
                 }
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
             }
 
             @media (max-width: 1300px) {
                 #main-header nav {
                     margin-left:20%;
+                }
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
                 }
             }
 
@@ -81,15 +96,30 @@
                 #main-header nav {
                     margin-left: 10%;
                 }
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
             }
             @media (max-width: 850px) {
                 #main-header nav {
                     margin-left: 0%;
                 }
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
             }
             @media (max-width: 720px) {
-                #main-header nav {
+                #main-header nav, #main-header .form-inline{
                     visibility: collapse;
+                }
+                #header-nav-btn {
+                    visibility: collapse;
+                    position: absolute;
+                }
+                .hamburger {
+                    visibility: visible;
                 }
             }
 
