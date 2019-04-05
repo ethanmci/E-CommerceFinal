@@ -5,3 +5,4 @@ shopping cart
 - functional addition buttons
 
 https://alligator.io/vuejs/vue-media-queries/ !!! VUE RESPONSIVE RENDERING ! !!!
+https://vuejs.org/v2/cookbook/client-side-storage.html !! VUE LOCAL STORAGE !! 
