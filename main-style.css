@@ -118,13 +118,13 @@ a {
 
 #hero-text {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 0;
     width: 100%;
     padding-left: 30%;
     padding-right: 30%;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3vw;
 }#hero-text span {
     color:black;
     background:white;
