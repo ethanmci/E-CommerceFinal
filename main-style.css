@@ -25,6 +25,7 @@ a {
 #main-header nav {
     font-family: monospace;
     position: relative;
+    margin-left:30%;
 }
 #main-header nav ul {
     margin: 0;
