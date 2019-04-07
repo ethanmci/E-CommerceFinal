@@ -240,14 +240,14 @@
     </div>
 
     <!-- This is for the boxes of images -->
-    <div class="row" style="width:100%;">
-        <div class="col-md-12 my-4 d-inline-flex mx-auto " >
+    <div class="row">
+        <div class="col-md-12 my-4 d-flex mx-auto d-block" id="PicID">
 
 
-            <figure class="col-6">
+            <figure class="col justify-content-center">
                 <div class="wrapper">
                     <a href="../E-CommerceFinal/individualProduct.html">
-                        <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                        <img alt="1" src="../E-CommerceFinal/tempImage/1.jpg" class="img-fluid image" />
                         <div class="product">
                             <h1><div class="content"></div></h1>
                         </div>
@@ -255,10 +255,10 @@
                 </div>
             </figure>
 
-            <figure class="col-6">
+            <figure class="col justify-content-center">
                 <div class="wrapper">
                     <a href="../E-CommerceFinal/individualProduct.html">
-                        <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+                        <img alt="2" src="../E-CommerceFinal/tempImage/2.jpg" class="img-fluid image" />
                         <div class="product">
                             <h1><div class="content"></div></h1>
                         </div>
@@ -287,7 +287,7 @@
                 padding-left: 2.5%;
                 padding-bottom: 2%;
                 padding-top: 2%;
-                text-align: left;
+                text-align:left;
             }
 
                 .footer h3 {
@@ -305,22 +305,21 @@
                     padding-bottom: 1%;
                     list-style-type: none;
                 }
+                .footer nav ul {
+                    list-style-type:none;
+                }
 
-                    .footer nav ul {
+                    .footer nav ul li a {
+                        position: relative;
+                        margin-left: 0%;
+                        bottom: 0;
+                        padding-left: 0%;
+                        width: 100%;
+                        color: grey;
+                        text-align: left;
                         list-style-type: none;
                     }
-
-                        .footer nav ul li a {
-                            position: relative;
-                            margin-left: 0%;
-                            bottom: 0;
-                            padding-left: 0%;
-                            width: 100%;
-                            color: grey;
-                            text-align: left;
-                            list-style-type: none;
-                        }
-
+                   
 
             .footerEnd {
                 position: relative;
@@ -328,15 +327,25 @@
                 margin: 0;
                 width: 100%;
                 background-color: black;
-                border-top: solid;
-                border-width: medium;
-                border-color: grey;
+                border-top:solid;
+                border-width:medium;
+                border-color:grey;
                 color: grey;
                 padding-top: 0.4%;
                 padding-bottom: 0.4%;
                 text-align: center;
             }
         </style>
+
+        <script>
+            $("#PicID a").click(function () {
+                var alt = $(this).children("img").attr("alt");
+                sessionStorage.setItem("product", alt);
+            });
+
+        </script>
+
+
         <div class="footerWrapper">
             <div class="footer">
                 <nav>
@@ -387,7 +396,7 @@
             </div>
         </div>
 
-        <
+        
 
         <div class="footerEnd">
             Not Copyrighted at all lmao we illigally sell memes to the public<i class="fas fa-american-sign-language-interpreting"></i>

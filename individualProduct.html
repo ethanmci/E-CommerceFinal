@@ -176,6 +176,11 @@
                     $('#dropdown').slideUp(300);
                 }
             );
+
+
+            
+
+
 		</script>
 	</header>
 
@@ -186,20 +191,26 @@
         <div class="col-md-12 my-4 d-flex mx-auto d-block">
 
 
-            <figure class="col-7 justify-content-center">
-                <div class="wrapper">
-                    <img alt="picture" src="../E-CommerceFinal/tempImage/Shoe1.jpg" class="img-fluid image" />
+            <figure class="col-7 justify-content-center" >
+                <div class="wrapper" >
+                    <img alt="picture" src="../E-CommerceFinal/tempImage/1.jpg" id="whichPic" class="img-fluid image" />
                 </div>
             </figure>
 
             <figure class="col-3 justify-content-center">
-                <h1 style="font-weight: bold;">
+                <h1 style="font-weight: bold;" id="product">
                     Title Here
                 </h1>
-                More font
+                <div id="description">
+                    More font
+                </div>
+                    <br />
+                <h1 id="price">
+                    Moneyyy 
+                </h1>
 
                 <div class="row py-5">
-                    <div class="col my-auto">
+                    <div class="col my-auto" id="Cart">
                         <button type="button" class="btn btn-success btn-lg" style="font-weight: bold;">Add to Cart </button>
                     </div>
                 </div>
@@ -279,6 +290,49 @@
                 text-align: center;
             }
         </style>
+
+        <script>
+            var k = sessionStorage.getItem("product");            
+            var image = document.getElementById('whichPic');
+            image.src = "../E-CommerceFinal/tempImage/" + k + ".jpg";
+            
+            $("#Cart button").click(function () {
+                var item = $(this).children("img").attr("alt");
+                sessionStorage.setItem("cart", item);
+            });
+
+            // Contains all the descriptor information for the products
+            var data = {
+                "product": [
+                    {
+                        "title": "Big Chungus",
+                        "price": "$" + 40.00,
+                        "description": "A phenomena of nature, Big Chungus has a mass greater than a black hole."
+                    },
+                    {
+                        "title": "Big Chungus",
+                        "price": "$" + 40.00,
+                        "description": "A phenomena of nature, Big Chungus has a mass greater than a black hole."
+                    },
+                    {
+                        "title": "Pickle Chin",
+                        "price": "$" + 20.00,
+                        "description": "Few posess the power of roasting that this young man does."
+                    }
+                ]
+            }
+
+            document.getElementById('product').innerHTML = data.product[k].title; // Puts the data item of value k into the div with id 'product'
+            document.getElementById('price').innerHTML = data.product[k].price; // Puts the data item of value k into the div with id 'price'
+            document.getElementById('description').innerHTML = data.product[k].description; // Puts the data item of value k into the div with id 'description'
+
+
+
+
+
+
+        </script>
+
         <div class="footerWrapper">
             <div class="footer">
                 <nav>
@@ -329,7 +383,7 @@
             </div>
         </div>
 
-        <
+
 
         <div class="footerEnd">
             bionicles in my lambrghini
