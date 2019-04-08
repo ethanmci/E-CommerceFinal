@@ -214,6 +214,8 @@
             }
         </style>
         <script>
+            
+
             $('#search-input').hide();
             $('#mobile-dropdown').hide();
 
@@ -381,14 +383,21 @@
         </style>
 
         <script>
+            var retrieveCart = sessionStorage.getItem("cart");
+            var cartCheckout = JSON.parse(retrieveCart);
+            var cart = [cartCheckout];
             var k = sessionStorage.getItem("product");
             var image = document.getElementById('whichPic');
+            
             image.src = "../E-CommerceFinal/tempImage/" + k + ".jpg";
 
             $("#Cart button").click(function () {
-                var item = $(this).children("img").attr("alt");
-                sessionStorage.setItem("cart", item);
+                cart.push(k);
+                sessionStorage.setItem("cart", JSON.stringify(cart));
             });
+
+            
+            
 
             // Contains all the descriptor information for the products
             var data = {

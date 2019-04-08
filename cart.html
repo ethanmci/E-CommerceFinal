@@ -515,7 +515,9 @@
 
     <script>
 
-
+        var retrieveCart = sessionStorage.getItem("cart");
+        var cartCheckout = JSON.parse(retrieveCart);
+        alert(cartCheckout);
 
         //Keeps track of the values
         var vn = new Vue({
