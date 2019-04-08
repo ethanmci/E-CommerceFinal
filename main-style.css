@@ -118,13 +118,43 @@ a {
     visibility: collapse;
 }
 /*--------------------------------------------------------------------------------MOBILE HEADER CSS--------------------------------------------------------------------------------*/
-#mobile-dropdown {
-    font-family: monospace;
-    color: #fff;
-    background: #262626;
+#mobile-dropdown{
+    visibility:collapse;
+    position:absolute;
+    color: black;
+    background-color: black;
     width: 100%;
-    padding: 0 0 0 0;
+    padding: 0;
+    margin:0;
 }
+
+    #mobile-dropdown .btn {
+        text-decoration:none;
+        color: white;
+        background-color: black;
+        margin: 0;
+        padding: 5%;
+        display: block;
+    }
+
+    #mobile-dropdown .btn:hover {
+        color: black;
+        background: white;
+    }
+
+    #mobile-dropdown .MDB {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        margin: 0;
+        padding: 5%;
+        display: block;
+    }
+        #mobile-dropdown .MDB:hover {
+            color: black;
+            background: white;
+        }
+
 /*--------------------------------------------------------------------------------CAROUSEL--------------------------------------------------------------------------------*/
 #hero-text {
     position: absolute;
@@ -154,6 +184,7 @@ a {
 .wrapper {
     position: relative;
     width: 100%;
+    margin-top:10%;
 }
 
 .image {

@@ -19,8 +19,10 @@
         <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
             <div class="row">
                 <!--LOGO-->
-                <div class="col my-auto" style="padding: 1%;">
-                    <i class="fas fa-toilet fa-2x"></i>
+                <div class="col" style="padding: 1%;">
+                    <a class="btn" href="../E-CommerceFinal/home.html" role="button">
+                        <i class="fas fa-toilet fa-2x"></i>
+                        </a>
 
                 </div>
                 <div class="col-10" style="padding: 0%;" id="center-col">
@@ -49,7 +51,7 @@
                 </div>
 
                 <!--SECONDARY NAV BUTTONS-->
-                <div class="col text-right my-auto" style="padding: 0%;">
+                <div class="col text-right" style="padding: 0%;">
                     <div class="form-inline" style="float: right;">
                         <a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
                             <i class="fas fa-shopping-cart fa-1x"></i>
@@ -71,12 +73,28 @@
             </div>
 
         </div>
+        <!--MOBILE DROP DOWN HEADER-->
         <div id="mobile-dropdown">
-            <button type="button" class="btn btn-primary btn-lg btn-block">PLACEHOLDER</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">PLACEHOLDER</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">PLACEHOLDER</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">PLACEHOLDER</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">PLACEHOLDER</button>
+            <ul>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">Home</a></li>
+                <li id="MDB_dropdown-toggle">
+                    <a class="btn btn-lg btn-block" href="../E-CommerceFinal/products.html" role="button">Shop for Memes  <i class="fa fa-caret-down"></i></a>
+                    <!--DROP DOWN FOR THE MOBILE PRODUCTS BUTTON-->
+                    <ul id="MDB_dropdown">
+                        <li><a class="MDB" href="#" role="button">Trending Now</a></li>
+                        <li><a class="MDB" href="#" role="button">Dank</a></li>
+                        <li><a class="MDB" href="#" role="button">Screenshots</a></li>
+                        <li><a class="MDB" href="#" role="button">Cursed Images</a></li>
+                        <li><a class="MDB" href="#" role="button">Wholesome</a></li>
+                        <li><a class="MDB" href="#" role="button">Sh*tposts</a></li>
+                        <li><a class="MDB" href="#" role="button">Normie</a></li>
+                        <li><a class="MDB" href="#" role="button">Other</a></li>
+                    </ul>
+                </li>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">Nut Button</a></li>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">About</a></li>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/cart.html" role="button">Cart</a></li>
+            </ul>
         </div>
         <style>
             @media (max-width: 1800px) {
@@ -89,6 +107,12 @@
                     position: absolute;
                 }
 
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
                 @media (max-width: 1500px) {
                     #main-header nav {
                         margin-left: 25%;
@@ -99,12 +123,22 @@
                         position: absolute;
                     }
 
+                    #mobile-dropdown {
+                        visibility: collapse;
+                        position: absolute;
+                    }
+                }
+
                     @media (max-width: 1300px) {
                         #main-header nav {
                             margin-left: 17%;
                         }
 
                         .hamburger {
+                            visibility: collapse;
+                            position: absolute;
+                        }
+                        #mobile-dropdown {
                             visibility: collapse;
                             position: absolute;
                         }
@@ -119,6 +153,10 @@
                             visibility: collapse;
                             position: absolute;
                         }
+                        #mobile-dropdown {
+                            visibility: collapse;
+                            position: absolute;
+                        }
                     }
 
                     @media (max-width: 850px) {
@@ -127,6 +165,10 @@
                         }
 
                         .hamburger {
+                            visibility: collapse;
+                            position: absolute;
+                        }
+                        #mobile-dropdown {
                             visibility: collapse;
                             position: absolute;
                         }
@@ -143,9 +185,14 @@
                             position: inherit;
                             margin-left: 88%;
                         }
+                        #mobile-dropdown {
+                            visibility: visible;
+                            position:inherit;
+                        }
+                        
                     }
-                }
-            }
+                
+            
         </style>
         <script>
             $('#search-input').hide();
@@ -168,6 +215,18 @@
                 function () {
                     console.log("Closing hidden menu");
                     $('#dropdown').slideUp(300);
+                }
+            );
+
+            $('#MDB_dropdown').hide();
+            $('#MDB_dropdown-toggle').hover(
+                function () {
+                    console.log("Opening hidden menu");
+                    $('#MDB_dropdown').slideDown(200);
+                },
+                function () {
+                    console.log("Closing hidden menu");
+                    $('#MDB_dropdown').slideUp(300);
                 }
             );
 
@@ -263,6 +322,7 @@
                             <h1><div class="content"></div></h1>
                         </div>
                     </a>
+                    </div>
             </figure>
 
         </div>
@@ -278,6 +338,7 @@
 
             .footerWrapper {
                 text-align: center;
+                margin-top:10%;
             }
 
             .footer {
