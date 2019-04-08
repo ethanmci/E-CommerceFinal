@@ -310,132 +310,135 @@
                 <div class="col-2 my-auto">PRICE</div>
                 <div class="col-3 my-auto">QUANTITY</div>
             </div>
-            <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
-                <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
-                <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
-                <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
-                <div class="col-2 my-auto"><h4>$99.99</h4></div>
-                <div class="col-3 my-auto align-items-center">
-                    <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
-                        <div class="input-group-prepend" id="vue-app" style="border: solid 1px; border-color:black;">
-                            <button class="btn btn-dark btn-md" v-on:click="subtract" type="button">
-                                <i class="fas fa-minus" style="color: white;"></i>
+
+
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto align-items-center">
+                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
+                    <div class="input-group-prepend" id="vue-app" style="border: solid 1px; border-color:black;">
+                        <button class="btn btn-dark btn-md" v-on:click="subtract" type="button">
+                            <i class="fas fa-minus" style="color: white;"></i>
+                        </button>
+
+                        <input type="text" class="form-control" placeholder="" aria-label="" v-model="product" aria-describedby="inputGroup-sizing-default">
+
+                        <div class="input-group-append">
+                            <button class="btn btn-dark btn-md" v-on:click="add" type="button">
+                                <i class="fas fa-plus" style="color: white;"></i>
                             </button>
-
-                            <input type="text" class="form-control" placeholder="" aria-label="" v-model="product" aria-describedby="inputGroup-sizing-default">
-
-                            <div class="input-group-append">
-                                <button class="btn btn-dark btn-md" v-on:click="add" type="button">
-                                    <i class="fas fa-plus" style="color: white;"></i>
-                                </button>
-                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
-                <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
-                <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
-                <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
-                <div class="col-2 my-auto"><h4>$99.99</h4></div>
-                <div class="col-3 my-auto align-items-center">
-                    <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
-                        <div class="input-group-prepend" style="border: solid 1px; border-color:black;">
-                            <button class="btn btn-dark btn-md" type="button">
-                                <i class="fas fa-minus" style="color: white;"></i>
-                            </button>
-                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
-                            <div class="input-group-append">
-                                <button class="btn btn-dark btn-md" type="button">
-                                    <i class="fas fa-plus" style="color: white;"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
-                <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
-                <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
-                <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
-                <div class="col-2 my-auto"><h4>$99.99</h4></div>
-                <div class="col-3 my-auto align-items-center">
-                    <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
-                        <div class="input-group-prepend" style="border: solid 1px; border-color:black;">
-                            <button class="btn btn-dark btn-md" type="button">
-                                <i class="fas fa-minus" style="color: white;"></i>
-                            </button>
-                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
-                            <div class="input-group-append">
-                                <button class="btn btn-dark btn-md" type="button">
-                                    <i class="fas fa-plus" style="color: white;"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
-                <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
-                <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
-                <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
-                <div class="col-2 my-auto"><h4>$99.99</h4></div>
-                <div class="col-3 my-auto align-items-center">
-                    <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
-                        <div class="input-group-prepend" style="border: solid 1px; border-color:black;">
-                            <button class="btn btn-dark btn-md" type="button">
-                                <i class="fas fa-minus" style="color: white;"></i>
-                            </button>
-                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
-                            <div class="input-group-append">
-                                <button class="btn btn-dark btn-md" type="button">
-                                    <i class="fas fa-plus" style="color: white;"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Subtotal div -->
-            <div class="row" style="text-align:center; padding: 1% 0 0 0;">
-                <div class="col-1 my-auto"></div>
-                <div class="col-6 my-auto text-left"><h4>Subtotal:</h4></div>
-                <!-- Column displaying subtotal -->
-                <div class="col-2 my-auto"><h4>$800.00</h4></div>
-                <div class="col-3 my-auto"></div>
-            </div>
-
-            <!-- Shipping and tax div -->
-            <div class="row" style="text-align:center; padding: 0 0 0 0;">
-                <div class="col-1 my-auto"></div>
-                <div class="col-6 my-auto text-left"><h4>Shipping & Tax:</h4></div>
-                <!-- Column displaying shipping and tax -->
-                <div class="col-2 my-auto"><h4>$20.00</h4></div>
-                <div class="col-3 my-auto"></div>
-            </div>
-
-            <!-- Total price div -->
-            <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 0 0 1% 0">
-                <div class="col-1 my-auto"></div>
-                <div class="col-6 my-auto text-left"><h4 class="font-weight-bold">Total:</h4></div>
-                <!-- Column displaying total price -->
-                <div class="col-2 my-auto"><h4 class="font-weight-bold">$820.00</h4></div>
-                <div class="col-3 my-auto"></div>
-            </div>
-
-            <!-- Div containing  -->
-            <div class="row" style="padding-top:1%; padding-bottom:15%;">
-                <div class="col-1 my-auto"></div>
-                <div class="col-8 my-auto text-left">
-                    <button type="button" class="btn btn-dark btn-lg" style="font-weight: bold;">Return to shop </button>
-                </div>
-                <div class="col-3 my-auto text-left" style="padding-left">
-                    <button type="button" class="btn btn-success btn-lg" style="font-weight: bold;">Checkout </button>
                 </div>
             </div>
         </div>
+
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto align-items-center">
+                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
+                    <div class="input-group-prepend" style="border: solid 1px; border-color:black;">
+                        <button class="btn btn-dark btn-md" type="button">
+                            <i class="fas fa-minus" style="color: white;"></i>
+                        </button>
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark btn-md" type="button">
+                                <i class="fas fa-plus" style="color: white;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto align-items-center">
+                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
+                    <div class="input-group-prepend" style="border: solid 1px; border-color:black;">
+                        <button class="btn btn-dark btn-md" type="button">
+                            <i class="fas fa-minus" style="color: white;"></i>
+                        </button>
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark btn-md" type="button">
+                                <i class="fas fa-plus" style="color: white;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+            <div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
+            <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
+            <div class="col-4 my-auto"><h4>Product Name Here</h4></div>
+            <div class="col-2 my-auto"><h4>$99.99</h4></div>
+            <div class="col-3 my-auto align-items-center">
+                <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
+                    <div class="input-group-prepend" style="border: solid 1px; border-color:black;">
+                        <button class="btn btn-dark btn-md" type="button">
+                            <i class="fas fa-minus" style="color: white;"></i>
+                        </button>
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="inputGroup-sizing-default">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark btn-md" type="button">
+                                <i class="fas fa-plus" style="color: white;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Subtotal div -->
+        <div class="row" style="text-align:center; padding: 1% 0 0 0;">
+            <div class="col-1 my-auto"></div>
+            <div class="col-6 my-auto text-left"><h4>Subtotal:</h4></div>
+            <!-- Column displaying subtotal -->
+            <div class="col-2 my-auto"><h4>$800.00</h4></div>
+            <div class="col-3 my-auto"></div>
+        </div>
+
+        <!-- Shipping and tax div -->
+        <div class="row" style="text-align:center; padding: 0 0 0 0;">
+            <div class="col-1 my-auto"></div>
+            <div class="col-6 my-auto text-left"><h4>Shipping & Tax:</h4></div>
+            <!-- Column displaying shipping and tax -->
+            <div class="col-2 my-auto"><h4>$20.00</h4></div>
+            <div class="col-3 my-auto"></div>
+        </div>
+
+        <!-- Total price div -->
+        <div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 0 0 1% 0">
+            <div class="col-1 my-auto"></div>
+            <div class="col-6 my-auto text-left"><h4 class="font-weight-bold">Total:</h4></div>
+            <!-- Column displaying total price -->
+            <div class="col-2 my-auto"><h4 class="font-weight-bold">$820.00</h4></div>
+            <div class="col-3 my-auto"></div>
+        </div>
+
+        <!-- Div containing  -->
+        <div class="row" style="padding-top:1%; padding-bottom:15%;">
+            <div class="col-1 my-auto"></div>
+            <div class="col-8 my-auto text-left">
+                <button type="button" class="btn btn-dark btn-lg" style="font-weight: bold;">Return to shop </button>
+            </div>
+            <div class="col-3 my-auto text-left" style="padding-left">
+                <button type="button" class="btn btn-success btn-lg" style="font-weight: bold;">Checkout </button>
+            </div>
+        </div>
+    </div>
     </div>
     <div id="temp-mobile-render">
         <div class="container" style="padding: 3% 3% 3% 3%">
@@ -517,6 +520,7 @@
 
         var retrieveCart = sessionStorage.getItem("cart");
         var cartCheckout = JSON.parse(retrieveCart);
+        var len = cartCheckout.length;
         alert(cartCheckout);
 
         //Keeps track of the values
@@ -540,6 +544,10 @@
         });
 
 
+        //for (i = 0; i < len; i++) {
+          //  var newTask = $('<div class="container" style="padding: 3% 3% 3% 3%"><div class="row" style="border-bottom: 2px solid black; padding: 3% 0 3% 0"><div class="col-sm col-4"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div><div class="col-sm col-4" style="padding:0;"><h2 style="font-weight:bold; margin:0; padding:0;">Product Name</h2><h3 style="font-weight:bold;">$19.00</h3><button type="button" class="btn btn-danger">REMOVE</button></div><div class="col-sm col-4 my-auto" id="vue-app"><button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;"><i class="fas fa-chevron-up"></i></button><input type="text" class="form-control" placeholder="" aria-label="" v-model="product" aria-describedby="inputGroup-sizing-default"><button class="btn btn-dark btn-md" v-on:click="add" type="button" style="width:100%;"><i class="fas fa-chevron-down"></i></button></div></div>');
+            //$("style").after(newTask);
+        //}
 
     </script>
 
