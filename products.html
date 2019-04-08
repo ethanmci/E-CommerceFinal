@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <link rel="icon" href="../E-CommerceFinal/tempImage/yosh.jpg">
@@ -254,6 +254,32 @@
             });
         </script>
     </header>
+    <style>
+        
+
+        .show {
+            display: block;
+        }
+
+        .wrapper{
+            display:none;
+        }
+
+        #filterButton{
+            color:white;
+            background-color:black;
+        }
+        #filterButton:hover{
+            color:black;
+            background-color:white;
+        }
+        #filterButton.active {
+            color:black;
+            background-color:white;
+        }
+
+
+    </style>
 
     <div class="container-fluid mt-5">
         <div class="row m-4">
@@ -268,29 +294,46 @@
                                     Types
                                 </div>
                             </h1>
+                            <div id="myBtnContainer">
+                                <div id="filterButton" role="button" class="row mx-4 btnz active" onclick="filterSelection('all')">
+                                    <!--<label class="fancy-checkbox " style="cursor:pointer;">
+        <input type="checkbox" />
+        <i class="fas fa-check-square fa-2x checked"></i>
+        <i class="far fa-square fa-2x unchecked"></i>
+        </label>-->
 
-                            <div class="row mx-4">
-                                
-                                    <label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
+                                    <div class="m-2">All</div>
+                                </div>
 
-                                    </label>
-                                
-                                <div class="m-2">Huarache 1s</div>
-                            </div>
+                                <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('filter1')">
+                                    <!--<label class="fancy-checkbox " style="cursor:pointer;">
+        <input type="checkbox" />
+        <i class="fas fa-check-square fa-2x checked"></i>
+        <i class="far fa-square fa-2x unchecked"></i>
+        </label>-->
 
-                            <div class="row mx-4">
+                                    <div class="m-2">Huarache 1s</div>
+                                </div>
 
-                                <label class="fancy-checkbox " style="cursor:pointer;">
-                                    <input type="checkbox" />
-                                    <i class="fas fa-check-square fa-2x checked"></i>
-                                    <i class="far fa-square fa-2x unchecked"></i>
+                                <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('filter2')">
+                                    <!--<label class="fancy-checkbox " style="cursor:pointer;">
+        <input type="checkbox" />
+        <i class="fas fa-check-square fa-2x checked"></i>
+        <i class="far fa-square fa-2x unchecked"></i>
+        </label>-->
 
-                                </label>
+                                    <div class="m-2">Huarache 2s</div>
+                                </div>
 
-                                <div class="m-2">Huarache 1s</div>
+                                <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('filter3')">
+                                    <!--<label class="fancy-checkbox " style="cursor:pointer;">
+        <input type="checkbox" />
+        <i class="fas fa-check-square fa-2x checked"></i>
+        <i class="far fa-square fa-2x unchecked"></i>
+        </label>-->
+
+                                    <div class="m-2">Huarache 3s</div>
+                                </div>
                             </div>
 
                         </li>
@@ -302,8 +345,8 @@
             <div class="col-9" id="PicID">
                 <div class="row">
                     <div class="col d-flex p-4">
-                        <figure class="col ">
-                            <div class="wrapper">
+                        <figure class="col">
+                            <div class="wrapper filter1 filter2">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="1" src="../E-CommerceFinal/tempImage/1.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -317,7 +360,7 @@
                         </figure>
 
                         <figure class="col">
-                            <div class="wrapper">
+                            <div class="wrapper filter3">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="2" src="../E-CommerceFinal/tempImage/2.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -331,7 +374,7 @@
                         </figure>
 
                         <figure class="col">
-                            <div class="wrapper">
+                            <div class="wrapper filter3">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="3" src="../E-CommerceFinal/tempImage/3.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -349,8 +392,8 @@
 
                 <div class="row">
                     <div class="col d-flex p-4">
-                        <figure class="col ">
-                            <div class="wrapper">
+                        <figure class="col">
+                            <div class="wrapper filter2">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="4" src="../E-CommerceFinal/tempImage/4.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -364,7 +407,7 @@
                         </figure>
 
                         <figure class="col">
-                            <div class="wrapper">
+                            <div class="wrapper filter1">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="5" src="../E-CommerceFinal/tempImage/5.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -378,7 +421,7 @@
                         </figure>
 
                         <figure class="col">
-                            <div class="wrapper">
+                            <div class="wrapper filter1 filter2">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="6" src="../E-CommerceFinal/tempImage/6.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -395,8 +438,8 @@
 
                 <div class="row">
                     <div class="col d-flex p-4">
-                        <figure class="col ">
-                            <div class="wrapper">
+                        <figure class="col">
+                            <div class="wrapper filter2 filter3">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="7" src="../E-CommerceFinal/tempImage/7.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -410,7 +453,7 @@
                         </figure>
 
                         <figure class="col">
-                            <div class="wrapper">
+                            <div class="wrapper filter2">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="8" src="../E-CommerceFinal/tempImage/8.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -424,7 +467,7 @@
                         </figure>
 
                         <figure class="col">
-                            <div class="wrapper">
+                            <div class="wrapper filter1">
                                 <a href="../E-CommerceFinal/individualProduct.html">
                                     <img alt="9" src="../E-CommerceFinal/tempImage/9.jpg" class="img-fluid image" />
                                     <div class="product ">
@@ -454,6 +497,52 @@
             sessionStorage.setItem("product", alt);
         });
 
+        //FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("wrapper");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btnz");
+        for (var i = 0; i < btns.length; i++) {
+           btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+          });
+        }
+        
+
+        // Contains all the descriptor information for the products/////////////////////////////////////////////////////////////////////////////////////////////
     </script>
 
 
