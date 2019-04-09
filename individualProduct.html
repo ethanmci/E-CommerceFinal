@@ -387,18 +387,29 @@
         </style>
 
         <script>
-            var retrieveCart = sessionStorage.getItem("cart");
-            var cartCheckout = JSON.parse(retrieveCart);
-            var cart = [cartCheckout];
-            var k = sessionStorage.getItem("product");
+            //var retrieveCart = sessionStorage.getItem("cart");
+            //var cartCheckout = JSON.parse(retrieveCart);
+            //var cart = [cartCheckout];
+            var k = sessionStorage.getItem('product');
             var image = document.getElementById('whichPic');
+            
             
             image.src = "../E-CommerceFinal/tempImage/" + k + ".jpg";
 
             $("#Cart button").click(function () {
+                if (sessionStorage.cart) {
+                    cart = JSON.parse(sessionStorage.getItem('cart'));
+                } else {
+                    cart = [];
+                }
                 cart.push(k);
-                sessionStorage.setItem("cart", JSON.stringify(cart));
+                sessionStorage.setItem('cart', JSON.stringify(cart));
             });
+
+            
+
+            var retrievedObject = sessionStorage.getItem('cart');
+            console.log('retrievedObject: ', JSON.parse(retrievedObject));
 
             
             

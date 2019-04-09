@@ -521,7 +521,7 @@
         var retrieveCart = sessionStorage.getItem("cart");
         var cartCheckout = JSON.parse(retrieveCart);
         var len = cartCheckout.length;
-        alert(cartCheckout);
+        console.log("Number of items in shopping cart: ",len);
 
         //Keeps track of the values
         var vn = new Vue({
