@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <header>
-        <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
-            <div class="row">
-                <!--LOGO-->
-                <div class="col" style="padding: 1%;">
-                    <a class="btn" href="../E-CommerceFinal/home.html" role="button">
-                        <i class="fas fa-toilet fa-2x"></i>
-                    </a>
+	<header>
+		<div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
+			<div class="row">
+				<!--LOGO-->
+				<div class="col-1" style="padding: 1%;">
+					<a class="btn" href="../E-CommerceFinal/home.html" role="button">
+						<img src="../E-CommerceFinal/tempImage/sickkickswhite.png" height="68%" width="68%" />
+					</a>
 
 				</div>
 				<div class="col-7" style="padding: 0%;" id="center-col">
@@ -93,7 +93,7 @@
 		<style>
 			@media (max-width: 1800px) {
 				#main-header nav {
-					margin-left: 27%;
+					margin-left: 45%;
 				}
 
                 .hamburger {
@@ -109,7 +109,7 @@
 
 			@media (max-width: 1500px) {
 				#main-header nav {
-					margin-left: 20%;
+					margin-left: 40%;
 				}
 
                 .hamburger {
@@ -125,7 +125,23 @@
 
 			@media (max-width: 1300px) {
 				#main-header nav {
-					margin-left: 12%;
+					margin-left: 30%;
+				}
+
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
+			@media (max-width: 1200px) {
+				#main-header nav {
+					margin-left: 20%;
 				}
 
                 .hamburger {
@@ -155,27 +171,11 @@
                 }
             }
 
-            @media (max-width: 850px) {
-                #main-header nav {
-                    margin-left: 0%;
-                }
-
-                .hamburger {
-                    visibility: collapse;
-                    position: absolute;
-                }
-
-                #mobile-dropdown {
-                    visibility: collapse;
-                    position: absolute;
-                }
-            }
-
-            @media (max-width: 810px) {
-                #main-header nav, #main-header .form-inline, #center-col {
-                    visibility: collapse;
-                    position: absolute;
-                }
+			@media (max-width: 970px) {
+				#main-header nav, #main-header .form-inline, #center-col {
+					visibility: collapse;
+					position: absolute;
+				}
 
                 .hamburger {
                     visibility: visible;
