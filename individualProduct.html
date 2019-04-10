@@ -33,135 +33,194 @@
 
 
 
-	<header>
-		<div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
-			<div class="row">
-				<!--LOGO-->
-				<div class="col" style="padding: 1%;">
-					<i class="fas fa-toilet fa-2x"></i>
+    <header>
+        <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
+            <div class="row">
+                <!--LOGO-->
+                <div class="col" style="padding: 1%;">
+                    <a class="btn" href="../E-CommerceFinal/home.html" role="button">
+                        <i class="fas fa-toilet fa-2x"></i>
+                    </a>
 
-				</div>
-				<div class="col-10" style="padding: 0%;" id="center-col">
-					<!--MAIN NAV BUTTONS-->
-					<nav class="navigation" role="Navigation">
-						<ul>
-							<li><a href="../E-CommerceFinal/home.html">Home</a></li>
-							<li id="dropdown-toggle">
-								<a href="../E-CommerceFinal/products.html">Shop for Memes  <i class="fa fa-caret-down"></i></a>
-								<ul id="dropdown">
-									<li><a href="#">Trending Now</a></li>
-									<li><a href="#">Dank</a></li>
-									<li><a href="#">Screenshots</a></li>
-									<li><a href="#">Cursed Images</a></li>
-									<li><a href="#">Wholesome</a></li>
-									<li><a href="#">Sh*tposts</a></li>
-									<li><a href="#">Normie</a></li>
-									<li><a href="#">Other</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Nut Button</a></li>
-							<li><a href="#">About</a></li>
-						</ul>
-					</nav>
+                </div>
+                <div class="col-10" style="padding: 0%;" id="center-col">
+                    <!--MAIN NAV BUTTONS-->
+                    <nav class="navigation" role="Navigation">
+                        <ul>
+                            <li><a href="../E-CommerceFinal/home.html">Home</a></li>
+                            <li id="dropdown-toggle">
+                                <a href="../E-CommerceFinal/products.html">Shop for Shoes  <i class="fa fa-caret-down"></i></a>
+                                <ul id="dropdown">
+                                    <li><a href="#">Mens</a></li>
+                                    <li><a href="#">Womens</a></li>
+                                    <li><a href="#">Nike</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Other</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nut Button</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </nav>
 
-				</div>
+                </div>
 
-				<!--SECONDARY NAV BUTTONS-->
-				<div class="col text-right my-auto" style="padding: 0%;">
-					<div class="form-inline" style="float: right;">
-						<a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
-							<i class="fas fa-shopping-cart fa-1x"></i>
-						</a>
-						<input type="text" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
-						<button type="button" class="btn btn-outline-dark" id="search-btn">
-							<i class="fas fa-search fa-1x"></i>
-						</button>
-					</div>
+                <!--SECONDARY NAV BUTTONS-->
+                <div class="col text-right" style="padding: 0%;">
+                    <div class="form-inline" style="float: right;">
+                        <a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
+                            <i class="fas fa-shopping-cart fa-1x"></i>
+                        </a>
+                        <input type="text" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
+                        <button type="button" class="btn btn-outline-dark" id="search-btn">
+                            <i class="fas fa-search fa-1x"></i>
+                        </button>
+                    </div>
+                    <div class="hamburger my-auto" style="float: right;">
+                        <a class="btn btn-outline-dark" id="hamburger-menu-btn" role="button">
+                            <i class="fas fa-bars fa-2x" style="color:white;"></i>
+                        </a>
+                    </div>
+
+                </div>
 
 
-				</div>
-				<div class="hamburger my-auto" style="float: right;">
-					<a class="btn btn-outline-dark" href="../E-CommerceFinal/home.html" role="button">
-						<i class="fas fa-bars fa-2x" style="color:white;"></i>
-					</a>
-				</div>
-			</div>
+            </div>
 
-		</div>
-		<style>
-			@media (max-width: 1800px) {
-				#main-header nav {
-					margin-left: 30%;
-				}
+        </div>
+        <!--MOBILE DROP DOWN HEADER-->
+        <div id="mobile-dropdown">
+            <ul>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">Home</a></li>
+                <li id="MDB_dropdown-toggle">
+                    <a class="btn btn-lg btn-block" href="../E-CommerceFinal/products.html" role="button">Shop for Memes  <i class="fa fa-caret-down"></i></a>
+                    <!--DROP DOWN FOR THE MOBILE PRODUCTS BUTTON-->
+                    <ul id="MDB_dropdown">
+                        <li><a class="MDB" href="#" role="button">Trending Now</a></li>
+                        <li><a class="MDB" href="#" role="button">Dank</a></li>
+                        <li><a class="MDB" href="#" role="button">Screenshots</a></li>
+                        <li><a class="MDB" href="#" role="button">Cursed Images</a></li>
+                        <li><a class="MDB" href="#" role="button">Wholesome</a></li>
+                        <li><a class="MDB" href="#" role="button">Sh*tposts</a></li>
+                        <li><a class="MDB" href="#" role="button">Normie</a></li>
+                        <li><a class="MDB" href="#" role="button">Other</a></li>
+                    </ul>
+                </li>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">Nut Button</a></li>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">About</a></li>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/cart.html" role="button">Cart</a></li>
+            </ul>
+        </div>
+        <style>
+            @media (max-width: 1800px) {
+                #main-header nav {
+                    margin-left: 30%;
+                }
 
-				.hamburger {
-					visibility: collapse;
-					position: absolute;
-				}
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
 
-				@media (max-width: 1500px) {
-					#main-header nav {
-						margin-left: 25%;
-					}
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
 
-					.hamburger {
-						visibility: collapse;
-						position: absolute;
-					}
+            @media (max-width: 1500px) {
+                #main-header nav {
+                    margin-left: 25%;
+                }
 
-					@media (max-width: 1300px) {
-						#main-header nav {
-							margin-left: 17%;
-						}
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
 
-						.hamburger {
-							visibility: collapse;
-							position: absolute;
-						}
-					}
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
 
-					@media (max-width: 1000px) {
-						#main-header nav {
-							margin-left: 10%;
-						}
+            @media (max-width: 1300px) {
+                #main-header nav {
+                    margin-left: 17%;
+                }
 
-						.hamburger {
-							visibility: collapse;
-							position: absolute;
-						}
-					}
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
 
-					@media (max-width: 850px) {
-						#main-header nav {
-							margin-left: 0%;
-						}
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
 
-						.hamburger {
-							visibility: collapse;
-							position: absolute;
-						}
-					}
+            @media (max-width: 1000px) {
+                #main-header nav {
+                    margin-left: 10%;
+                }
 
-					@media (max-width: 720px) {
-						#main-header nav, #main-header .form-inline {
-							visibility: collapse;
-							position: absolute;
-						}
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
 
-						.hamburger {
-							visibility: visible;
-							margin-left: 88%;
-						}
-					}
-		</style>
-		<script>
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
+            @media (max-width: 850px) {
+                #main-header nav {
+                    margin-left: 0%;
+                }
+
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
+            @media (max-width: 720px) {
+                #main-header nav, #main-header .form-inline, #center-col {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                .hamburger {
+                    visibility: visible;
+                    position: inherit;
+                    margin-left: 88%;
+                }
+
+                #mobile-dropdown {
+                    visibility: visible;
+                    position: inherit;
+                }
+            }
+        </style>
+        <script>
+            
+
             $('#search-input').hide();
+            $('#mobile-dropdown').hide();
 
             $(function () {
                 var searchBtn = $('#search-btn');
                 var searchIn = $('#search-input');
                 searchBtn.click(function () {
-                    searchIn.toggle("slide").focus()    ;
+                    searchIn.toggle("slide").focus();
                 });
             });
 
@@ -177,12 +236,41 @@
                 }
             );
 
+            $('#MDB_dropdown').hide();
+            $('#MDB_dropdown-toggle').hover(
+                function () {
+                    console.log("Opening hidden menu");
+                    $('#MDB_dropdown').slideDown(200);
+                },
+                function () {
+                    console.log("Closing hidden menu");
+                    $('#MDB_dropdown').slideUp(300);
+                }
+            );
 
-            
+            $(function () {
+                var mobileDrop = $('#mobile-dropdown');
+                var hamMenu = $('#hamburger-menu-btn');
+                hamMenu.click(function () {
+                    console.log("Opening hamburger menu");
+                    if ($(this).find($(".fas")).hasClass('fa-bars')) {
+                        console.log("Found");
+                        $(this).find($(".fas")).removeClass('fa-bars').addClass('fa-times');
+                        $(this).css("background-color", "tomato");
+                    } else if ($(this).find($(".fas")).hasClass('fa-times')) {
+                        console.log("Found");
+                        $(this).find($(".fas")).removeClass('fa-times').addClass('fa-bars');
+                        $(this).css("background-color", "black");
+                    } else {
+                        console.log("unexpected error!");
+                    }
 
+                    mobileDrop.slideToggle(250);
 
-		</script>
-	</header>
+                });
+            });
+        </script>
+    </header>
 
 
 
@@ -191,31 +279,35 @@
         <div class="col-md-12 my-4 d-flex mx-auto d-block">
 
 
-            <figure class="col-7 justify-content-center" >
-                <div class="wrapper" >
+            <figure class="col-7 justify-content-center">
+                <div class="wrapper">
                     <img alt="picture" src="../E-CommerceFinal/tempImage/1.jpg" id="whichPic" class="img-fluid image" />
                 </div>
             </figure>
 
-            <figure class="col-3 justify-content-center">
-                <h1 style="font-weight: bold;" id="product">
-                    Title Here
-                </h1>
-                <div id="description">
-                    More font
-                </div>
-                    <br />
-                <h1 id="price">
-                    Moneyyy 
-                </h1>
+			<figure class="col-3 justify-content-center">
+				
+				<button type="button" onclick="window.location.href = '../E-CommerceFinal/products.html';" class="btn btn-lg" style="font-weight: bold;"><i class="fas fa-long-arrow-alt-left"></i>   Back</button>
+				
+				<h1 style="font-weight: bold;" id="product">
+					Title Here
+				</h1>
+				<div id="description">
+					More font
+				</div>
+				<br />
+				<h1 id="price">
+					Moneyyy
+				</h1>
 
-                <div class="row py-5">
-                    <div class="col my-auto" id="Cart">
-                        <button type="button" class="btn btn-success btn-lg" style="font-weight: bold;">Add to Cart </button>
-                    </div>
-                </div>
-                <!--  -->
-            </figure>
+				<div class="row py-5">
+
+					<div class="col my-auto" id="Cart">
+						<button type="button" class="btn btn-success btn-lg" style="font-weight: bold;">Add to Cart </button>
+					</div>
+				</div>
+				<!--  -->
+			</figure>
 
 
         </div>
@@ -292,33 +384,116 @@
         </style>
 
         <script>
-            var k = sessionStorage.getItem("product");            
+            //var retrieveCart = sessionStorage.getItem("cart");
+            //var cartCheckout = JSON.parse(retrieveCart);
+            //var cart = [cartCheckout];
+            var k = sessionStorage.getItem('product');
             var image = document.getElementById('whichPic');
-            image.src = "../E-CommerceFinal/tempImage/" + k + ".jpg";
             
+            
+            image.src = "../E-CommerceFinal/tempImage/" + k + ".jpg";
+
             $("#Cart button").click(function () {
-                var item = $(this).children("img").attr("alt");
-                sessionStorage.setItem("cart", item);
+                if (sessionStorage.cart) {
+                    cart = JSON.parse(sessionStorage.getItem('cart'));
+                } else {
+                    cart = [];
+                }
+                cart.push(k);
+                sessionStorage.setItem('cart', JSON.stringify(cart));
             });
+
+            
+
+            var retrievedObject = sessionStorage.getItem('cart');
+            console.log('retrievedObject: ', JSON.parse(retrievedObject));
+
+            
+            
 
             // Contains all the descriptor information for the products
             var data = {
                 "product": [
                     {
-                        "title": "Big Chungus",
-                        "price": "$" + 40.00,
-                        "description": "A phenomena of nature, Big Chungus has a mass greater than a black hole."
+                        "title": "Nike Air Jordan 1",
+                        "price": "$" + 240.00,
+                        "description": "Men's Shoe"
                     },
+					{
+						"title": "Nike Air Jordan 1",
+						"price": "$" + 240.00,
+						"description": "Men's Shoe"
+					},
                     {
-                        "title": "Big Chungus",
-                        "price": "$" + 40.00,
-                        "description": "A phenomena of nature, Big Chungus has a mass greater than a black hole."
+                        "title": "Nike Air Jordan 4",
+                        "price": "$" + 265.00,
+                        "description": "Men's Shoe"
                     },
+					{
+						"title": "Nike Huarache",
+						"price": "$" + 175.00,
+						"description": "Men's Shoe"
+					},
                     {
-                        "title": "Pickle Chin",
-                        "price": "$" + 20.00,
-                        "description": "Few posess the power of roasting that this young man does."
-                    }
+                        "title": "Nike Air Max 97 LX",
+                        "price": "$" + 230.00,
+                        "description": "Men's/Women's Shoe"
+                    },
+					{
+						"title": "Nike Air Force 1",
+						"price": "$" + 120.00,
+						"description": "Men's/Women's Shoe"
+					},
+					{
+            			"title": "Nike Vaporify 4%",
+						"price": "$" + 330.00,
+						"description": "Men's/Women's Running Shoe"
+					},
+					{
+            			"title": "Adidas Ultraboost Black",
+						"price": "$" + 250.00,
+						"description": "Men's Running"
+					},
+					{
+            			"title": "Adidas NMD Tripple Black",
+						"price": "$" + 120.00,
+						"description": "Men's Shoe"
+					},
+					{
+            			"title": "Adidas Pureboost",
+						"price": "$" + 170.00,
+						"description": "Men's Running"
+					},
+					{
+            			"title": "Adidas Falcon",
+						"price": "$" + 140.00,
+						"description": "Women's Shoe"
+					},
+					{
+            			"title": "Adidas Ultraboost White",
+						"price": "$" + 250.00,
+						"description": "Women's Running"
+					},
+					{
+            			"title": "Adidas Sleek",
+						"price": "$" + 120.00,
+						"description": "Women's Shoe"
+					},
+					{
+						"title": "Vans Old Skool",
+						"price": "$" + 80.00,
+						"description": "Men's/Women's Shoe"
+					},
+					{
+						"title": "New Balance 608v4",
+						"price": "$" + 100.00,
+						"description": "Men's Shoe"
+					},
+					{
+						"title": "Timberland Premium",
+						"price": "$" + 190.00,
+						"description": "Men's Boot"
+					},
                 ]
             }
 
@@ -342,18 +517,6 @@
                         <li><a href="../E-CommerceFinal/products.html">Shop for Memes</a></li>
                         <li><a href="#">Nut Button</a></li>
                         <li><a href="#">About</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="footer">
-                <nav>
-                    <h3>yeet</h3>
-                    <ul>
-                        <li><a href="#">make him</a></li>
-                        <li><a href="#">look tortured</a></li>
-                        <li><a href="#">make him</a></li>
-                        <li><a href="#">eating beans</a></li>
                     </ul>
                 </nav>
             </div>
@@ -385,9 +548,9 @@
 
 
 
-        <div class="footerEnd">
-            bionicles in my lambrghini
-        </div>
+		<div class="footerEnd">
+			Not Copyrighted at all lmao we illigally sell memes to the public<i class="fas fa-american-sign-language-interpreting"></i>
+		</div>
 
     </footer>
 </body>
