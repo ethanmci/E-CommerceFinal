@@ -107,103 +107,7 @@
 			</ul>
 		</div>
 		<style>
-			@media (max-width: 1800px) {
-				#main-header nav {
-					margin-left: 45%;
-				}
-
-				.hamburger {
-					visibility: collapse;
-					position: absolute;
-				}
-
-				#mobile-dropdown {
-					visibility: collapse;
-					position: absolute;
-				}
-			}
-
-			@media (max-width: 1500px) {
-				#main-header nav {
-					margin-left: 40%;
-				}
-
-				.hamburger {
-					visibility: collapse;
-					position: absolute;
-				}
-
-				#mobile-dropdown {
-					visibility: collapse;
-					position: absolute;
-				}
-			}
-
-			@media (max-width: 1300px) {
-				#main-header nav {
-					margin-left: 30%;
-				}
-
-				.hamburger {
-					visibility: collapse;
-					position: absolute;
-				}
-
-				#mobile-dropdown {
-					visibility: collapse;
-					position: absolute;
-				}
-			}
-
-			@media (max-width: 1200px) {
-				#main-header nav {
-					margin-left: 20%;
-				}
-
-				.hamburger {
-					visibility: collapse;
-					position: absolute;
-				}
-
-				#mobile-dropdown {
-					visibility: collapse;
-					position: absolute;
-				}
-			}
-
-			@media (max-width: 1000px) {
-				#main-header nav {
-					margin-left: 0%;
-				}
-
-				.hamburger {
-					visibility: collapse;
-					position: absolute;
-				}
-
-				#mobile-dropdown {
-					visibility: collapse;
-					position: absolute;
-				}
-			}
-
-			@media (max-width: 970px) {
-				#main-header nav, #main-header .form-inline, #center-col {
-					visibility: collapse;
-					position: absolute;
-				}
-
-				.hamburger {
-					visibility: visible;
-					position: inherit;
-					margin-left: 88%;
-				}
-
-				#mobile-dropdown {
-					visibility: visible;
-					position: inherit;
-				}
-			}
+			
 		</style>
 		<script>
 
@@ -269,31 +173,6 @@
 	<style>
 
 
-
-
-		@media (max-width: 890px) {
-			*, body {
-				font-size: 1rem !important;
-			}
-
-			#temp-desktop-render {
-				visibility: collapse;
-				position: absolute;
-				display: none;
-			}
-		}
-
-		@media (min-width: 891px) {
-			#temp-desktop-render {
-				visibility: visible;
-			}
-
-			#temp-mobile-render {
-				visibility: collapse;
-				position: absolute;
-				display: none;
-			}
-		}
 	</style>
 	<!-- temporary container for desktop cart -->
 	<div id="temp-desktop-render">
@@ -309,6 +188,7 @@
 
 
 			<div class="row" style="text-align:center; border-bottom: 2px solid black; padding: 1% 0 1% 0">
+                <a class="btn btn-alert remove"></a>
 				<div class="col-1 my-auto"><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></div>
 				<div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\shop-placeholder.png" /></div> <!-- image here -->
 				<div class="col-4 my-auto"><h4>Product Name Here</h4></div>
@@ -509,13 +389,39 @@
 			</div>
 		</div>
 	</div>
+    <style>
+        a.remove {
+            text-decoration: none;
+            font-family: $fontSans;
+            color: #ffffff;
+            font-weight: bold;
+            background: #e0e0e0;
+            padding: .5em;
+            font-size: .75em;
+            display: inline-block;
+            border-radius: 100%;
+            line-height: .85;
+            @include transition(all, .25s, linear);
+            &:hover
 
+        {
+            background: #f30;
+        }
+
+        }
+
+    </style>
 
 
 	<script>
+        // Remove Items From Cart
+        $('a.remove').click(function () {
+            event.preventDefault();
+            $(this).parent().parent().parent().hide(400);
 
+        })
 
-        //Keeps track of the values
+        //Keeps track of the products
         var vn = new Vue({
             el: '#vue-app',
             data: {
@@ -553,70 +459,7 @@
 
 	<footer>
 		<style>
-			footer {
-				background-color: black;
-			}
-
-			.footerWrapper {
-				text-align: center;
-			}
-
-			.footer {
-				background-color: black;
-				display: inline-block;
-				padding-right: 2.5%;
-				padding-left: 2.5%;
-				padding-bottom: 2%;
-				padding-top: 2%;
-				text-align: left;
-			}
-
-				.footer h3 {
-					position: relative;
-					margin-left: 0%;
-					bottom: 0;
-					padding-left: 0%;
-					padding-top: 2%;
-					width: 100%;
-					color: white;
-					text-align: left;
-				}
-
-				.footer nav {
-					padding-bottom: 1%;
-					list-style-type: none;
-				}
-
-					.footer nav ul {
-						list-style-type: none;
-					}
-
-						.footer nav ul li a {
-							position: relative;
-							margin-left: 0%;
-							bottom: 0;
-							padding-left: 0%;
-							width: 100%;
-							color: grey;
-							text-align: left;
-							list-style-type: none;
-						}
-
-
-			.footerEnd {
-				position: relative;
-				bottom: 0;
-				margin: 0;
-				width: 100%;
-				background-color: black;
-				border-top: solid;
-				border-width: medium;
-				border-color: grey;
-				color: grey;
-				padding-top: 0.4%;
-				padding-bottom: 0.4%;
-				text-align: center;
-			}
+			
 		</style>
 		<div class="footerWrapper">
 			<div class="footer">
