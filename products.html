@@ -45,29 +45,29 @@
 						</ul>
 					</nav>
 
-                </div>
+				</div>
 
-                <!--SECONDARY NAV BUTTONS-->
-                <div class="col text-right" style="padding: 1%;">
-                    <div class="form-inline" style="float: right;">
-                        <a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
-                            <i class="fas fa-shopping-cart fa-1x"></i>
-                        </a>
-                        <input type="text" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
-                        <button type="button" class="btn btn-outline-dark" id="search-btn">
-                            <i class="fas fa-search fa-1x"></i>
-                        </button>
-                    </div>
-                    <div class="hamburger my-auto" style="float: right;">
-                        <a class="btn btn-outline-dark" id="hamburger-menu-btn" role="button">
-                            <i class="fas fa-bars fa-2x" style="color:white;"></i>
-                        </a>
-                    </div>
+				<!--SECONDARY NAV BUTTONS-->
+				<div class="col text-right" style="padding: 1%;">
+					<div class="form-inline" style="float: right;">
+						<a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
+							<i class="fas fa-shopping-cart fa-1x"></i>
+						</a>
+						<input type="text" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
+						<button type="button" class="btn btn-outline-dark" id="search-btn">
+							<i class="fas fa-search fa-1x"></i>
+						</button>
+					</div>
+					<div class="hamburger my-auto" style="float: right;">
+						<a class="btn btn-outline-dark" id="hamburger-menu-btn" role="button">
+							<i class="fas fa-bars fa-2x" style="color:white;"></i>
+						</a>
+					</div>
 
-                </div>
+				</div>
 
 
-            </div>
+			</div>
 
 		</div>
 		<!--MOBILE DROP DOWN HEADER-->
@@ -152,63 +152,64 @@
 
                 });
             });
-        </script>
-    </header>
-    <style>
+		</script>
+	</header>
+	<style>
 
 
-        .show {
-            display: block;
-        }
+		.show {
+			display: block;
+		}
 
-        .wrapper {
-            display: none;
-        }
+		.wrapper {
+			display: none;
+		}
 
         #filterButton {
             color: black;
             
         }
 
-            #filterButton:hover {
-                color: black;
-                background-color: white;
-            }
+			#filterButton:hover {
+				color: black;
+				background-color: white;
+			}
 
-            #filterButton.active {
-                color: black;
-                background-color: white;
-                border: solid;
-                border-width: thin;
-                border-color: black;
-            }
+			#filterButton.active {
+				color: black;
+				background-color: white;
+				border: solid;
+				border-width: thin;
+				border-color: black;
+			}
 
     </style>
 
-    <div id="temp-desktop-render">
+	<div id="temp-desktop-render">
 
-        <div class="container-fluid mt-5">
-            <div class="row m-4">
+		<div class="container-fluid mt-5">
+			<div class="row m-4">
 
-                <div class="col-3 mt-4">
-                    <div class="col">
-                        <ul class="list-group ">
+				<div class="col-3 mt-4">
+					<div class="col">
+						<ul class="list-group ">
 
-                            <li class="list-group-item ">
-                                <h1>
-                                    <div class="col" style="font-weight: bold">
-                                        Filter
-                                    </div>
-                                </h1>
+							<li class="list-group-item ">
+								<h1>
+									<div class="col" style="font-weight: bold">
+										Filter
+									</div>
+								</h1>
+								<!--Filter search section-->
+								<div id="myBtnContainer">
 
-                                <div id="myBtnContainer">
-
-                                    <div id="filterButton" role="button" class="row mx-4 btnz active" onclick="filterSelection('all')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
+									<!--A filter Button-->
+									<div id="filterButton" role="button" class="row mx-4 btnz active" onclick="filterSelection('all')">
+										<!--<label class="fancy-checkbox " style="cursor:pointer;">
+										<input type="checkbox" />
+										<i class="fas fa-check-square fa-2x checked"></i>
+										<i class="far fa-square fa-2x unchecked"></i>
+										</label>-->
 
                                         <div class="m-2">All</div>
                                     </div>
@@ -225,25 +226,25 @@
                                         <i class="far fa-square fa-2x unchecked"></i>
                                         </label>-->
 
-                                        <div class="m-2">Nike</div>
-                                    </div>
+										<div class="m-2">Nike</div>
+									</div>
+									<!--A filter Button-->
+									<div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('adidas')">
+										<!--<label class="fancy-checkbox " style="cursor:pointer;">
+										<input type="checkbox" />
+										<i class="fas fa-check-square fa-2x checked"></i>
+										<i class="far fa-square fa-2x unchecked"></i>
+										</label>-->
 
-                                    <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('adidas')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
-
-                                        <div class="m-2">Adidas</div>
-                                    </div>
-
-                                    <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('other')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
+										<div class="m-2">Adidas</div>
+									</div>
+									<!--A filter Button-->
+									<div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('other')">
+										<!--<label class="fancy-checkbox " style="cursor:pointer;">
+										<input type="checkbox" />
+										<i class="fas fa-check-square fa-2x checked"></i>
+										<i class="far fa-square fa-2x unchecked"></i>
+										</label>-->
 
                                         <div class="m-2">Other</div>
                                     </div>
@@ -260,582 +261,583 @@
                                         <i class="far fa-square fa-2x unchecked"></i>
                                         </label>-->
 
-                                        <div class="m-2">Men's Shoes</div>
-                                    </div>
+										<div class="m-2">Men's Shoes</div>
+									</div>
+									<!--A filter Button-->
+									<div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('female')">
+										<!--<label class="fancy-checkbox " style="cursor:pointer;">
+										<input type="checkbox" />
+										<i class="fas fa-check-square fa-2x checked"></i>
+										<i class="far fa-square fa-2x unchecked"></i>
+										</label>-->
 
-                                    <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('female')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
+										<div class="m-2">Women's Shoes</div>
+									</div>
+								</div>
 
-                                        <div class="m-2">Women's Shoes</div>
-                                    </div>
-                                </div>
+							</li>
 
-                            </li>
+						</ul>
+					</div>
+				</div>
+				<!--Individual product selections-->
+				<div class="col-9" id="PicID">
+					<div class="row">
+						<div class="col d-flex p-4">
+							<figure class="col">
+								<div class="wrapper nike mens">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="1" src="../E-CommerceFinal/tempImage/1.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc" id="product">
+										Nike Air Jordan 1
+										<div class="under" id="price">$240</div>
+										<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+									</div>
+							</figure>
 
-                        </ul>
-                    </div>
-                </div>
+							<figure class="col">
+								<div class="wrapper nike mens">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="2" src="../E-CommerceFinal/tempImage/2.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc" id="product">Nike Air Jordan 4</div>
+									<div class="under" id="price">$265</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
 
-                <div class="col-9" id="PicID">
-                    <div class="row">
-                        <div class="col d-flex p-4">
-                            <figure class="col">
-                                <div class="wrapper nike mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="1" src="../E-CommerceFinal/tempImage/1.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc" id="product">
-                                        Nike Air Jordan 1
-                                        <div class="under" id="price">$240</div>
-                                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                                    </div>
-                            </figure>
+							<figure class="col">
+								<div class="wrapper nike mens">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="3" src="../E-CommerceFinal/tempImage/3.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc" id="product">Nike Huarache</div>
+									<div class="under" id="price">$170</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
+						</div>
 
-                            <figure class="col">
-                                <div class="wrapper nike mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="2" src="../E-CommerceFinal/tempImage/2.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc" id="product">Nike Air Jordan 4</div>
-                                    <div class="under" id="price">$265</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
+					</div>
 
-                            <figure class="col">
-                                <div class="wrapper nike mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="3" src="../E-CommerceFinal/tempImage/3.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc" id="product">Nike Huarache</div>
-                                    <div class="under" id="price">$170</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-                        </div>
+					<div class="row">
+						<div class="col d-flex p-4">
+							<figure class="col">
+								<div class="wrapper nike mens female">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="4" src="../E-CommerceFinal/tempImage/4.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc" id="product">Nike Air Max 97 LX</div>
+									<div class="under" id="price">$230</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
 
-                    </div>
+							<figure class="col">
+								<div class="wrapper nike mens female">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="5" src="../E-CommerceFinal/tempImage/5.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Nike Air Force 1</div>
+									<div class="under">$120</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+								</div>
+							</figure>
 
-                    <div class="row">
-                        <div class="col d-flex p-4">
-                            <figure class="col">
-                                <div class="wrapper nike mens female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="4" src="../E-CommerceFinal/tempImage/4.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc" id="product">Nike Air Max 97 LX</div>
-                                    <div class="under" id="price">$230</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
+							<figure class="col">
+								<div class="wrapper nike mens female">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="6" src="../E-CommerceFinal/tempImage/6.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Nike Vaporify 4%</div>
+									<div class="under">$330</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+								</div>
+							</figure>
+						</div>
+					</div>
 
-                            <figure class="col">
-                                <div class="wrapper nike mens female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="5" src="../E-CommerceFinal/tempImage/5.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Nike Air Force 1</div>
-                                    <div class="under">$120</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                </div>
-                            </figure>
+					<div class="row">
+						<div class="col d-flex p-4">
+							<figure class="col">
+								<div class="wrapper adidas mens">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="7" src="../E-CommerceFinal/tempImage/7.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Adidas Ultraboost Black</div>
+									<div class="under">$250</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
 
-                            <figure class="col">
-                                <div class="wrapper nike mens female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="6" src="../E-CommerceFinal/tempImage/6.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Nike Vaporify 4%</div>
-                                    <div class="under">$330</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
+							<figure class="col">
+								<div class="wrapper adidas mens">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="8" src="../E-CommerceFinal/tempImage/8.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Adidas NMD Triple Black</div>
+									<div class="under">$120</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
 
-                    <div class="row">
-                        <div class="col d-flex p-4">
-                            <figure class="col">
-                                <div class="wrapper adidas mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="7" src="../E-CommerceFinal/tempImage/7.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Ultraboost Black</div>
-                                    <div class="under">$250</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
+							<figure class="col">
+								<div class="wrapper adidas mens">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="9" src="../E-CommerceFinal/tempImage/9.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Adidas Pureboost</div>
+									<div class="under">$170</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
+						</div>
+					</div>
 
-                            <figure class="col">
-                                <div class="wrapper adidas mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="8" src="../E-CommerceFinal/tempImage/8.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas NMD Triple Black</div>
-                                    <div class="under">$120</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
+					<div class="row">
+						<div class="col d-flex p-4">
+							<figure class="col">
+								<div class="wrapper adidas female">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="10" src="../E-CommerceFinal/tempImage/10.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Adidas Falcon</div>
+									<div class="under">$140</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
 
-                            <figure class="col">
-                                <div class="wrapper adidas mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="9" src="../E-CommerceFinal/tempImage/9.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Pureboost</div>
-                                    <div class="under">$170</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
+							<figure class="col">
+								<div class="wrapper adidas female">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="11" src="../E-CommerceFinal/tempImage/11.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Adidas Ultraboost White</div>
+									<div class="under">$250</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
 
-                    <div class="row">
-                        <div class="col d-flex p-4">
-                            <figure class="col">
-                                <div class="wrapper adidas female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="10" src="../E-CommerceFinal/tempImage/10.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Falcon</div>
-                                    <div class="under">$140</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
+							<figure class="col">
+								<div class="wrapper adidas female">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="12" src="../E-CommerceFinal/tempImage/12.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Adidas Sleek</div>
+									<div class="under">$120</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
+						</div>
+					</div>
 
-                            <figure class="col">
-                                <div class="wrapper adidas female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="11" src="../E-CommerceFinal/tempImage/11.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Ultraboost White</div>
-                                    <div class="under">$250</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
+					<div class="row">
+						<div class="col d-flex p-4">
+							<figure class="col">
+								<div class="wrapper other mens female">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="13" src="../E-CommerceFinal/tempImage/13.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Vans Old Skool</div>
+									<div class="under">$80</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
 
-                            <figure class="col">
-                                <div class="wrapper adidas female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="12" src="../E-CommerceFinal/tempImage/12.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Sleek</div>
-                                    <div class="under">$120</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
+							<figure class="col">
+								<div class="wrapper other mens">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="14" src="../E-CommerceFinal/tempImage/14.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">New Balance 608v4</div>
+									<div class="under">$100</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
 
-
-
-                    <div class="row">
-                        <div class="col d-flex p-4">
-                            <figure class="col">
-                                <div class="wrapper other mens female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="13" src="../E-CommerceFinal/tempImage/13.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Vans Old Skool</div>
-                                    <div class="under">$80</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col">
-                                <div class="wrapper other mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="14" src="../E-CommerceFinal/tempImage/14.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">New Balance 608v4</div>
-                                    <div class="under">$100</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col">
-                                <div class="wrapper other mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="15" src="../E-CommerceFinal/tempImage/15.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Timberland Premium</div>
-                                    <div class="under">$190</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="m-3" id="temp-mobile-render">
-        
-                    <div class="col">
-                        <ul class="list-group ">
-
-                            <li class="list-group-item ">
-                                <h1>
-                                    <div class="col" style="font-weight: bold">
-                                        Filter
-                                    </div>
-                                </h1>
-
-                                <div id="myBtnContainer">
-
-                                    <div id="filterButton" role="button" class="row mx-4 btnz active" onclick="filterSelection('all')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
-
-                                        <div class="m-2">All</div>
-                                    </div>
-                                    <h4>
-                                        <div class="col">
-                                            By Brand
-                                        </div>
-                                    </h4>
-
-                                    <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('nike')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
-
-                                        <div class="m-2">Nike</div>
-                                    </div>
-
-                                    <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('adidas')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
-
-                                        <div class="m-2">Adidas</div>
-                                    </div>
-
-                                    <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('other')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
-
-                                        <div class="m-2">Other</div>
-                                    </div>
-                                    <h4>
-                                        <div class="col">
-                                            By Gender
-                                        </div>
-                                    </h4>
-
-                                    <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('mens')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
-
-                                        <div class="m-2">Men's Shoes</div>
-                                    </div>
-
-                                    <div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('female')">
-                                        <!--<label class="fancy-checkbox " style="cursor:pointer;">
-                                        <input type="checkbox" />
-                                        <i class="fas fa-check-square fa-2x checked"></i>
-                                        <i class="far fa-square fa-2x unchecked"></i>
-                                        </label>-->
-
-                                        <div class="m-2">Women's Shoes</div>
-                                    </div>
-                                </div>
-
-                            </li>
-
-                        </ul>
-                    </div>
-               
-
-                <div class="col" id="PicID">
-                    
-                        
-                            <figure class="col mt-4">
-                                <div class="wrapper nike mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="1" src="../E-CommerceFinal/tempImage/1.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc" id="product">
-                                        Nike Air Jordan 1
-                                        <div class="under" id="price">$240</div>
-                                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                                    </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper nike mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="2" src="../E-CommerceFinal/tempImage/2.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc" id="product">Nike Air Jordan 4</div>
-                                    <div class="under" id="price">$265</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper nike mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="3" src="../E-CommerceFinal/tempImage/3.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc" id="product">Nike Huarache</div>
-                                    <div class="under" id="price">$170</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-                       
-                        
-                            <figure class="col mt-4">
-                                <div class="wrapper nike mens female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="4" src="../E-CommerceFinal/tempImage/4.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc" id="product">Nike Air Max 97 LX</div>
-                                    <div class="under" id="price">$230</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper nike mens female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="5" src="../E-CommerceFinal/tempImage/5.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Nike Air Force 1</div>
-                                    <div class="under">$120</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper nike mens female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="6" src="../E-CommerceFinal/tempImage/6.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Nike Vaporify 4%</div>
-                                    <div class="under">$330</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                                </div>
-                            </figure>
-       
-                            <figure class="col mt-4">
-                                <div class="wrapper adidas mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="7" src="../E-CommerceFinal/tempImage/7.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Ultraboost Black</div>
-                                    <div class="under">$250</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper adidas mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="8" src="../E-CommerceFinal/tempImage/8.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas NMD Triple Black</div>
-                                    <div class="under">$120</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper adidas mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="9" src="../E-CommerceFinal/tempImage/9.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Pureboost</div>
-                                    <div class="under">$170</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-                        
-            
-                            <figure class="col mt-4">
-                                <div class="wrapper adidas female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="10" src="../E-CommerceFinal/tempImage/10.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Falcon</div>
-                                    <div class="under">$140</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper adidas female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="11" src="../E-CommerceFinal/tempImage/11.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Ultraboost White</div>
-                                    <div class="under">$250</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper adidas female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="12" src="../E-CommerceFinal/tempImage/12.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Adidas Sleek</div>
-                                    <div class="under">$120</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-                    
-                        
-                            <figure class="col mt-4">
-                                <div class="wrapper other mens female">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="13" src="../E-CommerceFinal/tempImage/13.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Vans Old Skool</div>
-                                    <div class="under">$80</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper other mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="14" src="../E-CommerceFinal/tempImage/14.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">New Balance 608v4</div>
-                                    <div class="under">$100</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-
-                            <figure class="col mt-4">
-                                <div class="wrapper other mens">
-                                    <a href="../E-CommerceFinal/individualProduct.html">
-                                        <img alt="15" src="../E-CommerceFinal/tempImage/15.jpg" class="img-fluid image" />
-                                        <div class="product ">
-                                            <h1><div class="content"></div></h1>
-                                        </div>
-                                    </a>
-                                    <div class="desc">Timberland Premium</div>
-                                    <div class="under">$190</div>
-                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                                </div>
-                            </figure>
-                        
-                    
-                </div>
-
-          
-
-    </div>
+							<figure class="col">
+								<div class="wrapper other mens">
+									<a href="../E-CommerceFinal/individualProduct.html">
+										<img alt="15" src="../E-CommerceFinal/tempImage/15.jpg" class="img-fluid image" />
+										<div class="product ">
+											<h1><div class="content"></div></h1>
+										</div>
+									</a>
+									<div class="desc">Timberland Premium</div>
+									<div class="under">$190</div>
+									<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-    <script>
+	<!------------------------------------------Mobile sclae product page------------------------------------------>
+	<div class="m-3" id="temp-mobile-render">
+
+		<div class="col">
+			<ul class="list-group ">
+
+				<li class="list-group-item ">
+					<h1>
+						<div class="col" style="font-weight: bold">
+							Filter
+						</div>
+					</h1>
+
+					<!--Filter Sort-->
+					<div id="myBtnContainer">
+						<!--Filter Button-->
+						<div id="filterButton" role="button" class="row mx-4 btnz active" onclick="filterSelection('all')">
+							<!--<label class="fancy-checkbox " style="cursor:pointer;">
+		<input type="checkbox" />
+		<i class="fas fa-check-square fa-2x checked"></i>
+		<i class="far fa-square fa-2x unchecked"></i>
+		</label>-->
+
+							<div class="m-2">All</div>
+						</div>
+						<h4>
+							<div class="col">
+								By Brand
+							</div>
+						</h4>
+						<!--Filter Button-->
+						<div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('nike')">
+							<!--<label class="fancy-checkbox " style="cursor:pointer;">
+		<input type="checkbox" />
+		<i class="fas fa-check-square fa-2x checked"></i>
+		<i class="far fa-square fa-2x unchecked"></i>
+		</label>-->
+
+							<div class="m-2">Nike</div>
+						</div>
+						<!--Filter Button-->
+						<div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('adidas')">
+							<!--<label class="fancy-checkbox " style="cursor:pointer;">
+		<input type="checkbox" />
+		<i class="fas fa-check-square fa-2x checked"></i>
+		<i class="far fa-square fa-2x unchecked"></i>
+		</label>-->
+
+							<div class="m-2">Adidas</div>
+						</div>
+						<!--Filter Button-->
+						<div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('other')">
+							<!--<label class="fancy-checkbox " style="cursor:pointer;">
+		<input type="checkbox" />
+		<i class="fas fa-check-square fa-2x checked"></i>
+		<i class="far fa-square fa-2x unchecked"></i>
+		</label>-->
+
+							<div class="m-2">Other</div>
+						</div>
+						<h4>
+							<div class="col">
+								By Gender
+							</div>
+						</h4>
+						<!--Filter Button-->
+						<div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('mens')">
+							<!--<label class="fancy-checkbox " style="cursor:pointer;">
+		<input type="checkbox" />
+		<i class="fas fa-check-square fa-2x checked"></i>
+		<i class="far fa-square fa-2x unchecked"></i>
+		</label>-->
+
+							<div class="m-2">Men's Shoes</div>
+						</div>
+						<!--Filter Button-->
+						<div id="filterButton" role="button" class="row mx-4 btnz" onclick="filterSelection('female')">
+							<!--<label class="fancy-checkbox " style="cursor:pointer;">
+		<input type="checkbox" />
+		<i class="fas fa-check-square fa-2x checked"></i>
+		<i class="far fa-square fa-2x unchecked"></i>
+		</label>-->
+
+							<div class="m-2">Women's Shoes</div>
+						</div>
+					</div>
+
+				</li>
+
+			</ul>
+		</div>
+
+
+		<div class="col" id="PicID">
+
+			<!--Product Selections-->
+			<figure class="col mt-4">
+				<div class="wrapper nike mens">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="1" src="../E-CommerceFinal/tempImage/1.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc" id="product">
+						Nike Air Jordan 1
+						<div class="under" id="price">$240</div>
+						<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+					</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper nike mens">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="2" src="../E-CommerceFinal/tempImage/2.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc" id="product">Nike Air Jordan 4</div>
+					<div class="under" id="price">$265</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper nike mens">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="3" src="../E-CommerceFinal/tempImage/3.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc" id="product">Nike Huarache</div>
+					<div class="under" id="price">$170</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+
+			<figure class="col mt-4">
+				<div class="wrapper nike mens female">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="4" src="../E-CommerceFinal/tempImage/4.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc" id="product">Nike Air Max 97 LX</div>
+					<div class="under" id="price">$230</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper nike mens female">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="5" src="../E-CommerceFinal/tempImage/5.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Nike Air Force 1</div>
+					<div class="under">$120</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper nike mens female">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="6" src="../E-CommerceFinal/tempImage/6.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Nike Vaporify 4%</div>
+					<div class="under">$330</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper adidas mens">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="7" src="../E-CommerceFinal/tempImage/7.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Adidas Ultraboost Black</div>
+					<div class="under">$250</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper adidas mens">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="8" src="../E-CommerceFinal/tempImage/8.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Adidas NMD Triple Black</div>
+					<div class="under">$120</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper adidas mens">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="9" src="../E-CommerceFinal/tempImage/9.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Adidas Pureboost</div>
+					<div class="under">$170</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+
+			<figure class="col mt-4">
+				<div class="wrapper adidas female">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="10" src="../E-CommerceFinal/tempImage/10.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Adidas Falcon</div>
+					<div class="under">$140</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper adidas female">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="11" src="../E-CommerceFinal/tempImage/11.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Adidas Ultraboost White</div>
+					<div class="under">$250</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper adidas female">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="12" src="../E-CommerceFinal/tempImage/12.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Adidas Sleek</div>
+					<div class="under">$120</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+
+			<figure class="col mt-4">
+				<div class="wrapper other mens female">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="13" src="../E-CommerceFinal/tempImage/13.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Vans Old Skool</div>
+					<div class="under">$80</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper other mens">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="14" src="../E-CommerceFinal/tempImage/14.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">New Balance 608v4</div>
+					<div class="under">$100</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+			<figure class="col mt-4">
+				<div class="wrapper other mens">
+					<a href="../E-CommerceFinal/individualProduct.html">
+						<img alt="15" src="../E-CommerceFinal/tempImage/15.jpg" class="img-fluid image" />
+						<div class="product ">
+							<h1><div class="content"></div></h1>
+						</div>
+					</a>
+					<div class="desc">Timberland Premium</div>
+					<div class="under">$190</div>
+					<div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+				</div>
+			</figure>
+
+
+		</div>
+
+
+
+	</div>
+
+
+	<script>
 
 
         $("#PicID a").click(function () {
@@ -889,7 +891,7 @@
 
 
             // Contains all the descriptor information for the products/////////////////////////////////////////////////////////////////////////////////////////////
-    </script>
+	</script>
 
 
 
@@ -911,38 +913,38 @@
                 </nav>
             </div>
 
-            <div class="footer">
-                <nav>
-                    <h3>Other</h3>
-                    <ul>
-                        <li><a href="#">Boy im</a></li>
-                        <li><a href="#">Really bouta</a></li>
-                        <li><a href="#">Get yo pickle</a></li>
-                        <li><a href="#">chin ass boy</a></li>
-                    </ul>
-                </nav>
-            </div>
+			<div class="footer">
+				<nav>
+					<h3>Other</h3>
+					<ul>
+						<li><a href="#">Boy im</a></li>
+						<li><a href="#">Really bouta</a></li>
+						<li><a href="#">Get yo pickle</a></li>
+						<li><a href="#">chin ass boy</a></li>
+					</ul>
+				</nav>
+			</div>
 
-            <div class="footer">
-                <nav>
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li><a href="https://twitter.com/Wendys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li><a href="https://www.instagram.com/beansinplacesbeansshouldnotbe/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="https://www.facebook.com/DinosaurEarthSociety/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCa6TeYZ2DlueFRne5DyAnyg" target="_blank"><i class="fab fa-youtube"></i> Youtube</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+			<div class="footer">
+				<nav>
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="https://twitter.com/Wendys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+						<li><a href="https://www.instagram.com/beansinplacesbeansshouldnotbe/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+						<li><a href="https://www.facebook.com/DinosaurEarthSociety/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+						<li><a href="https://www.youtube.com/channel/UCa6TeYZ2DlueFRne5DyAnyg" target="_blank"><i class="fab fa-youtube"></i> Youtube</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 
 
 
-        <div class="footerEnd">
-            Not Copyrighted at all lmao we illigally sell memes to the public<i class="fas fa-american-sign-language-interpreting"></i>
-        </div>
+		<div class="footerEnd">
+			Not Copyrighted at all lmao we illigally sell memes to the public<i class="fas fa-american-sign-language-interpreting"></i>
+		</div>
 
-    </footer>
+	</footer>
 </body>
 
 </html>
