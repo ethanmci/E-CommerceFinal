@@ -37,9 +37,9 @@
 		<div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
 			<div class="row">
 				<!--LOGO-->
-				<div class="col-1" style="padding: 1%;">
+				<div id="logo" class="col-1" style="padding: 1%;">
 					<a class="btn" href="../E-CommerceFinal/home.html" role="button">
-						<img src="../E-CommerceFinal/tempImage/sickkickswhite.png" height="68%" width="68%" />
+						<img src="../E-CommerceFinal/tempImage/sickkickswhite.png" height="34" width="50" />
 					</a>
 
 				</div>
@@ -71,10 +71,15 @@
 						<a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
 							<i class="fas fa-shopping-cart fa-1x"></i>
 						</a>
-						<input type="text" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
-						<button type="button" class="btn btn-outline-dark" id="search-btn">
-							<i class="fas fa-search fa-1x"></i>
-						</button>
+						<div class="search-container">
+							<form action="/action_page.php">
+								<input type="text" placeholder="Search" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
+								<button type="button" class="btn btn-outline-dark" id="search-btn" onclick="window.location.href = '../E-CommerceFinal/products.html';">
+									<i class="fas fa-search fa-1x"></i>
+								</button>
+							</form>
+						</div>
+
 					</div>
 					<div class="hamburger my-auto" style="float: right;">
 						<a class="btn btn-outline-dark" id="hamburger-menu-btn" role="button">
@@ -91,9 +96,17 @@
 		<!--MOBILE DROP DOWN HEADER-->
 		<div id="mobile-dropdown">
 			<ul>
+				<li>
+					<div class="search-container">
+						<form action="/action_page.php">
+							<input type="text" placeholder="Search" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
+
+						</form>
+					</div>
+				</li>
 				<li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">Home</a></li>
 				<li id="MDB_dropdown-toggle">
-					<a class="btn btn-lg btn-block" href="../E-CommerceFinal/products.html" role="button">Shop for Memes  <i class="fa fa-caret-down"></i></a>
+					<a class="btn btn-lg btn-block" href="../E-CommerceFinal/products.html" role="button">Shop for Shoes  <i class="fa fa-caret-down"></i></a>
 					<!--DROP DOWN FOR THE MOBILE PRODUCTS BUTTON-->
 					<ul id="MDB_dropdown">
 						<li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Men's</a></li>
@@ -105,7 +118,7 @@
 				</li>
 
 				<li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">About</a></li>
-				<li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/cart.html" role="button">Cart</a></li>
+				<li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/cart.html" role="button">Cart  <i class="fas fa-shopping-cart fa-1x"></i></a></li>
 			</ul>
 		</div>
 		<style>
@@ -114,16 +127,17 @@
         <script>
 
 
-            $('#search-input').hide();
+           // $('#search-input').hide();
             $('#mobile-dropdown').hide();
 
-            $(function () {
-                var searchBtn = $('#search-btn');
-                var searchIn = $('#search-input');
-                searchBtn.click(function () {
-                    searchIn.toggle("slide").focus();
-                });
-            });
+            //code to hide & show search bar
+            //$(function () {
+              //  var searchBtn = $('#search-btn');
+                //var searchIn = $('#search-input');
+                //searchBtn.click(function () {
+                  //  searchIn.toggle("slide").focus();
+                //});
+           // });
 
             $('#dropdown').hide();
             $('#dropdown-toggle').hover(
@@ -149,23 +163,31 @@
                 }
             );
 
+            //function for mobile menu dropdown animation
             $(function () {
+                //linking the 2 key html elements to variables
                 var mobileDrop = $('#mobile-dropdown');
                 var hamMenu = $('#hamburger-menu-btn');
+                //code to be
                 hamMenu.click(function () {
                     console.log("Opening hamburger menu");
                     if ($(this).find($(".fas")).hasClass('fa-bars')) {
                         console.log("Found");
+                        //replacing the hamburger menu icon with an "x" icon
                         $(this).find($(".fas")).removeClass('fa-bars').addClass('fa-times');
+                        //background changes to red
                         $(this).css("background-color", "tomato");
                     } else if ($(this).find($(".fas")).hasClass('fa-times')) {
                         console.log("Found");
+                        //replacing the "x" icon with the hamburger
                         $(this).find($(".fas")).removeClass('fa-times').addClass('fa-bars');
+                        //resetting the background colour to default (black)
                         $(this).css("background-color", "black");
                     } else {
+                        //else statement if something unexpected happens
                         console.log("unexpected error!");
                     }
-
+                    //toggle slide jquery animation
                     mobileDrop.slideToggle(250);
 
                 });
