@@ -25,7 +25,7 @@ a {
 #main-header nav {
     font-family: monospace;
     position: relative;
-    margin-left:30%;
+    margin-left:50%;
 }
 #main-header nav ul {
     margin: 0;
@@ -251,6 +251,16 @@ a {
     .fancy-checkbox input[type="checkbox"]:checked ~ .unchecked {
         display: none;
     }
+.fansWrapper {
+	text-align:center;
+}
+.fans {
+	display:inline-block;
+	text-align:left;
+	margin-top:2%;
+	margin-bottom:2%;
+	
+}
 
 
 
@@ -264,7 +274,7 @@ a {
 .desc {
     padding: 5px;
     text-align: left;
-    color: #9b9fa3;
+    color: black;
     background-color: #EDF2F6;
     text-decoration: none;
     transition: background-color 100ms, color 300ms;
@@ -274,14 +284,14 @@ a {
     }
 
 .under {
-    padding-left: 5px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    text-align: left;
-    color: black;
-    background-color: #EDF2F6;
-    text-decoration: none;
-    transition: background-color 100ms, color 300ms;
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	text-align: left;
+	color: #9b9fa3;
+	background-color: #EDF2F6;
+	text-decoration: none;
+	transition: background-color 100ms, color 300ms;
 }
 .rating {
     padding-left: 5px;
