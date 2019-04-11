@@ -1,0 +1,430 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link rel="icon" href="../E-CommerceFinal/tempImage/yosh.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main-style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!----------------------------------------------------------------------------------HEADER HEADER HEADER HEADER---------------------------------------------------------------------------------->
+    <header>
+        <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
+            <div class="row">
+                <!--LOGO-->
+                <div class="col-1" style="padding: 1%;">
+                    <a class="btn" href="../E-CommerceFinal/home.html" role="button">
+                        <img src="../E-CommerceFinal/tempImage/sickkickswhite.png" height="68%" width="68%" />
+                    </a>
+
+                </div>
+                <div class="col-7" style="padding: 0%;" id="center-col">
+                    <!--MAIN NAV BUTTONS-->
+                    <nav class="navigation" role="Navigation">
+                        <ul>
+                            <li><a href="../E-CommerceFinal/home.html">Home</a></li>
+                            <li id="dropdown-toggle">
+                                <a href="../E-CommerceFinal/products.html">Shop for Shoes  <i class="fa fa-caret-down"></i></a>
+                                <ul id="dropdown">
+                                    <li><a href="../E-CommerceFinal/products.html">Mens</a></li>
+                                    <li><a href="../E-CommerceFinal/products.html">Womens</a></li>
+                                    <li><a href="../E-CommerceFinal/products.html">Nike</a></li>
+                                    <li><a href="../E-CommerceFinal/products.html">Adidas</a></li>
+                                    <li><a href="../E-CommerceFinal/products.html">Other</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="../E-CommerceFinal/about.html">About</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <!--SECONDARY NAV BUTTONS-->
+                <div class="col text-right" style="padding: 1%;">
+                    <div class="form-inline" style="float: right;">
+                        <a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
+                            <i class="fas fa-shopping-cart fa-1x"></i>
+                        </a>
+                        <input type="text" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
+                        <button type="button" class="btn btn-outline-dark" id="search-btn">
+                            <i class="fas fa-search fa-1x"></i>
+                        </button>
+                    </div>
+                    <div class="hamburger my-auto" style="float: right;">
+                        <a class="btn btn-outline-dark" id="hamburger-menu-btn" role="button">
+                            <i class="fas fa-bars fa-2x" style="color:white;"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <!--MOBILE DROP DOWN HEADER-->
+        <div id="mobile-dropdown">
+            <ul>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">Home</a></li>
+                <li id="MDB_dropdown-toggle">
+                    <a class="btn btn-lg btn-block" href="../E-CommerceFinal/products.html" role="button">Shop for Memes  <i class="fa fa-caret-down"></i></a>
+                    <!--DROP DOWN FOR THE MOBILE PRODUCTS BUTTON-->
+                    <ul id="MDB_dropdown">
+                        <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Men's</a></li>
+                        <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Women's</a></li>
+                        <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Nike</a></li>
+                        <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Adidas</a></li>
+                        <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Other</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">About</a></li>
+                <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/cart.html" role="button">Cart</a></li>
+            </ul>
+        </div>
+        <style>
+            @media (max-width: 1800px) {
+                #main-header nav {
+                    margin-left: 45%;
+                }
+
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
+            @media (max-width: 1500px) {
+                #main-header nav {
+                    margin-left: 40%;
+                }
+
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
+            @media (max-width: 1300px) {
+                #main-header nav {
+                    margin-left: 30%;
+                }
+
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
+            @media (max-width: 1200px) {
+                #main-header nav {
+                    margin-left: 20%;
+                }
+
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
+            @media (max-width: 1000px) {
+                #main-header nav {
+                    margin-left: 0%;
+                }
+
+                .hamburger {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                #mobile-dropdown {
+                    visibility: collapse;
+                    position: absolute;
+                }
+            }
+
+            @media (max-width: 970px) {
+                #main-header nav, #main-header .form-inline, #center-col {
+                    visibility: collapse;
+                    position: absolute;
+                }
+
+                .hamburger {
+                    visibility: visible;
+                    position: inherit;
+                    margin-left: 88%;
+                }
+
+                #mobile-dropdown {
+                    visibility: visible;
+                    position: inherit;
+                }
+            }
+        </style>
+        <script>
+
+
+            $('#search-input').hide();
+            $('#mobile-dropdown').hide();
+
+            $(function () {
+                var searchBtn = $('#search-btn');
+                var searchIn = $('#search-input');
+                searchBtn.click(function () {
+                    searchIn.toggle("slide").focus();
+                });
+            });
+
+            $('#dropdown').hide();
+            $('#dropdown-toggle').hover(
+                function () {
+                    console.log("Opening hidden menu");
+                    $('#dropdown').slideDown(200);
+                },
+                function () {
+                    console.log("Closing hidden menu");
+                    $('#dropdown').slideUp(300);
+                }
+            );
+
+            $('#MDB_dropdown').hide();
+            $('#MDB_dropdown-toggle').hover(
+                function () {
+                    console.log("Opening hidden menu");
+                    $('#MDB_dropdown').slideDown(200);
+                },
+                function () {
+                    console.log("Closing hidden menu");
+                    $('#MDB_dropdown').slideUp(300);
+                }
+            );
+
+            $(function () {
+                var mobileDrop = $('#mobile-dropdown');
+                var hamMenu = $('#hamburger-menu-btn');
+                hamMenu.click(function () {
+                    console.log("Opening hamburger menu");
+                    if ($(this).find($(".fas")).hasClass('fa-bars')) {
+                        console.log("Found");
+                        $(this).find($(".fas")).removeClass('fa-bars').addClass('fa-times');
+                        $(this).css("background-color", "tomato");
+                    } else if ($(this).find($(".fas")).hasClass('fa-times')) {
+                        console.log("Found");
+                        $(this).find($(".fas")).removeClass('fa-times').addClass('fa-bars');
+                        $(this).css("background-color", "black");
+                    } else {
+                        console.log("unexpected error!");
+                    }
+
+                    mobileDrop.slideToggle(250);
+
+                });
+            });
+        </script>
+    </header>
+    <!------------------------------------------------PAGE CONTENTS------------------------------------------------>
+    <div style="padding: 3% 25% 25% 3%">
+        <div class="row">
+            <div class="col-8">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="" placeholder="John">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputProvince">Province</label>
+                            <select id="inputProvince" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Alberta</option>
+                                <option>British Columbia</option>
+                                <option>Manitoba</option>
+                                <option>New Brunswick</option>
+                                <option>Newfoundland and Labrador</option>
+                                <option>Nova Scotia</option>
+                                <option>Ontario</option>
+                                <option>Prince Edward Island</option>
+                                <option>Saskatchewan</option>
+                                <option>Quebec</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                !!SHOPPING CART RECAP WILL GO HERE!!
+            </div>
+        </div>
+    </div>
+
+    <!--FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTER-->
+    <footer>
+        <style>
+            footer {
+                background-color: black;
+            }
+
+            .footerWrapper {
+                text-align: center;
+            }
+
+            .footer {
+                background-color: black;
+                display: inline-block;
+                padding-right: 2.5%;
+                padding-left: 2.5%;
+                padding-bottom: 2%;
+                padding-top: 2%;
+                text-align: left;
+            }
+
+                .footer h3 {
+                    position: relative;
+                    margin-left: 0%;
+                    bottom: 0;
+                    padding-left: 0%;
+                    padding-top: 2%;
+                    width: 100%;
+                    color: white;
+                    text-align: left;
+                }
+
+                .footer nav {
+                    padding-bottom: 1%;
+                    list-style-type: none;
+                }
+
+                    .footer nav ul {
+                        list-style-type: none;
+                    }
+
+                        .footer nav ul li a {
+                            position: relative;
+                            margin-left: 0%;
+                            bottom: 0;
+                            padding-left: 0%;
+                            width: 100%;
+                            color: grey;
+                            text-align: left;
+                            list-style-type: none;
+                        }
+
+
+            .footerEnd {
+                position: relative;
+                bottom: 0;
+                margin: 0;
+                width: 100%;
+                background-color: black;
+                border-top: solid;
+                border-width: medium;
+                border-color: grey;
+                color: grey;
+                padding-top: 0.4%;
+                padding-bottom: 0.4%;
+                text-align: center;
+            }
+        </style>
+
+        <script>
+            $("#PicID a").click(function () {
+                var alt = $(this).children("img").attr("alt");
+                sessionStorage.setItem("product", alt);
+            });
+
+        </script>
+
+
+        <div class="footerWrapper">
+            <div class="footer">
+                <nav>
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../E-CommerceFinal/home.html">Home</a></li>
+                        <li><a href="../E-CommerceFinal/products.html">Shop for Memes</a></li>
+                        <li><a href="#">Nut Button</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer">
+                <nav>
+                    <h3>Other</h3>
+                    <ul>
+                        <li><a href="#">Boy im</a></li>
+                        <li><a href="#">Really bouta</a></li>
+                        <li><a href="#">Get yo pickle</a></li>
+                        <li><a href="#">chin ass boy</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer">
+                <nav>
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://twitter.com/Wendys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.instagram.com/beansinplacesbeansshouldnotbe/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/DinosaurEarthSociety/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCa6TeYZ2DlueFRne5DyAnyg" target="_blank"><i class="fab fa-youtube"></i> Youtube</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div class="footerEnd">
+            Not Copyrighted at all lmao we illigally sell memes to the public<i class="fas fa-american-sign-language-interpreting"></i>
+        </div>
+
+    </footer>
+</body>
+</html>
