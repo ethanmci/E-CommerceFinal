@@ -276,7 +276,7 @@
                 //linking the 2 key html elements to variables
                 var mobileDrop = $('#mobile-dropdown');
                 var hamMenu = $('#hamburger-menu-btn');
-                //code to be
+                //code to be executed 
                 hamMenu.click(function () {
                     console.log("Opening hamburger menu");
                     if ($(this).find($(".fas")).hasClass('fa-bars')) {
@@ -440,6 +440,7 @@
                     <h5 class="card-header">Shopping Cart Overview</h5>
                     <div class="card-body">
                         <span><h></h></span>
+                        <!--  -->
                         
                     </div>
                 </div>
@@ -456,12 +457,10 @@
                 if (sameBtn.prop('checked')) {
                     console.log("check");
                     billAdr.disabled = true;
-
                 } else {
                     console.log("uncheck");
                     billAdr.disabled = false;
                 }
-
             });
         });
 
