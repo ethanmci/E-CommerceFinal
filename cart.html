@@ -533,7 +533,7 @@
                 <a class="col-1 my-auto remove" role="button" ><i class="fas fa-times-circle fa-2x" id="close-button-cart"></i></a>
                 <div class="col-2 my-auto"><img class="cart-icon img-fluid" src="..\E-CommerceFinal\tempImage\15.jpg" /></div> <!-- image here -->
                 <div class="col-4 my-auto"><h4>Timberland Premium</h4></div>
-                <div class="col-2 my-auto"><h4 id="price">$170</h4></div>
+                <div class="col-2 my-auto"><h4 id="price">$190</h4></div>
                 <div class="col-3 my-auto align-items-center">
                     <div class="input-group mb-3 align-items-center" style="padding-right: 25%; padding-left: 25%;">
                         <div class="input-group-prepend" style="border: solid 1px; border-color:black;">
@@ -945,26 +945,8 @@
 
 
         //Keeps track of the products
-        var vn = new Vue({
-            el: '#vue-app',
-            data: {
-                product: 1
-
-            },
-            methods: {
-                add: function () {
-                    this.product++;
-                },
-                subtract: function () {
-                    if (this.product > 0) {
-                        this.product--;
-                    }
-                }
-
-            }
-        });
-
-        
+        var total2 = 0;
+        var array = [];
         var retrieveCart = sessionStorage.getItem("cart");
         var cartCheckout = JSON.parse(retrieveCart);
         var len = cartCheckout.length;
@@ -975,19 +957,31 @@
 
         $(document).on('click', '.qty-plus', function () {
             $(this).prev().val(+$(this).prev().val() + 1);
-            var amount = $(this).next().val()
-            var shoePrice2 = $(this).parent().parent().parent().parent().attr('id');
-            console.log(shoePrice2);
-            var productPrice = data.product[shoePrice2].price * amount;
+            var amount = $(this).prev().val()
+            var shoeID2 = $(this).parent().parent().parent().parent().attr('id');
+            var productPrice2 = data.product[shoeID2].price * amount;
+            array[shoeID2 - 1] = productPrice2;
+            total2 = total2 + data.product[shoeID2].price;
+            for (var i = 0; i < len; i++) {
+                total2 = total2 + array[i];
+                console.log(array);
+            }
+            
         });
         $(document).on('click', '.qty-minus', function () {
-            if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
+            if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
             var amount = $(this).next().val()
-            var shoePrice = $(this).parent().parent().parent().parent().attr('id');
-            var productPrice = data.product[shoePrice].price * amount;
+            var shoeID = $(this).parent().parent().parent().parent().attr('id');
+            var productPrice = data.product[shoeID].price * amount;
+            array[shoeID - 1] = productPrice;
+            total2 = total2 - data.product[shoeID].price;
+            for (var i = 0; i < len; i++) {
+                total2 = total2 + array[i];
+                console.log(array);
+            }
+            
         });
 
-        
        
         // Remove Items From Cart
 
@@ -1251,8 +1245,9 @@
             var ind = cartCheckout[i];
             var currentPrice = data.product[ind].price;
             total = total + currentPrice;
-            console.log(total);
+            
         }
+
         var tax = (total * 0.13 + 5)
         var roundTax = Math.round(tax);
         var totalTotal = 0;
@@ -1267,7 +1262,7 @@
             document.getElementById('total').innerHTML = "$" + 0;
         }
         else if (len > 0) {
-            document.getElementById('subTotal').innerHTML = "$" + total
+            document.getElementById('subTotal').innerHTML = "$" + (total);
             document.getElementById('shipping').innerHTML = "$" + (roundTax);
             document.getElementById('total').innerHTML = "$" + (roundTotal);
         }
