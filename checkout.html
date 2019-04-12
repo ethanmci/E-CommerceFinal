@@ -207,7 +207,7 @@
             }
 
             @media (max-width: 970px) {
-                #main-header nav, #main-header .form-inline, #center-col {
+                #main-header nav, #main-header .form-inline, #center-col, #desktop-cart-review {
                     visibility: collapse;
                     position: absolute;
                 }
@@ -227,7 +227,7 @@
                     padding: 0 1% 0 1%;
                 }
             }
-            
+
 
             /* hides the default "spinner" on number type inputs */
             input[type=number]::-webkit-inner-spin-button,
@@ -312,23 +312,20 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="">Success!</h5>
-                    <a role="button" href="../E-CommerceFinal/home.html" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </a>
+                    <h5 class="modal-title" id="">Order Placed!</h5>
                 </div>
                 <div class="modal-body">
-                    Order placed!
+                    Thanks for shopping with us!
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+                    <a role="button" href="../E-CommerceFinal/home.html" class="btn btn-success">Ok</a>
                 </div>
             </div>
         </div>
     </div>
     <div style="padding: 3% 3%">
         <div id="main-container" class="row">
-            <div class="col-8">
+            <div class="col-8 mx-auto">
                 <h2 style="padding-bottom:2%;">Shipping Address</h2>
                 <form>
                     <div class="form-row">
@@ -493,7 +490,7 @@
                 </form>
                 <button id="place-order-btn" type="button" class="btn btn-success btn-lg btn-block"><b>Place Order</b></button>
             </div>
-            <div class="col-4">
+            <div class="col-4" id="desktop-cart-review">
                 <div class="card">
                     <h5 class="card-header">Shopping Cart Overview</h5>
                     <div class="card-body">
@@ -502,7 +499,6 @@
                             <h5 class="subtotaltax" style="font-weight: bold;">Shipping & Tax:  </h5><h5 id="shipping">0</h5>
                             <h5 style="font-weight: bold;">Total:</h5><h5 id="total">0</h5>
                         </span>
-                        <!--  -->
 
                     </div>
                 </div>
@@ -543,7 +539,7 @@
                     $(payInfo).prop('disabled', false);
                     //removing the disabled attribute when the credit/debit button is clicked
                 } else {
-                    console.log("unexpected")
+                    console.log("unexpected situation");
                 }
             });
         });
@@ -555,18 +551,23 @@
             orderBtn.click(function () {
                 var emptyField = false;
                 $(".checkout-form").each(function (index) {
+                    console.log($(this).val());
                     if ($(this).val().length === 0 && !($(this).is(':disabled'))) {
                         //adding a red border to all empty fields
+                        
                         $(this).addClass('border border-danger');
-                        var emptyField = true;
-                    } else if ($(this).hasClass('border border-danger')) {
+                        emptyField = true;
+                    } else if ($(this).val() === "Choose..." && !($(this).is(':disabled'))) {
+                        $(this).addClass('border border-danger');
+                    }else if ($(this).hasClass('border border-danger')) {
                         $(this).removeClass('border border-danger');
                     }
                 });
                 if(!emptyField){
                     $('#confirm-modal').modal('show');
+                    console.log("order processed");
                 }
-                
+
             });
         });
     </script>
