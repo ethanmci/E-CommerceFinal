@@ -535,7 +535,7 @@
 				<div class="col-1 my-auto"></div>
 				<div class="col-6 my-auto text-left"><h4>Subtotal:</h4></div>
 				<!-- Column displaying subtotal -->
-				<div class="col-2 my-auto"><h4>$800.00</h4></div>
+				<div class="col-2 my-auto" id="subTotal"><h4>$800.00</h4></div>
 				<div class="col-3 my-auto"></div>
 			</div>
 
@@ -544,7 +544,7 @@
 				<div class="col-1 my-auto"></div>
 				<div class="col-6 my-auto text-left"><h4>Shipping & Tax:</h4></div>
 				<!-- Column displaying shipping and tax -->
-				<div class="col-2 my-auto"><h4>$20.00</h4></div>
+				<div class="col-2 my-auto" id="shipping"><h4>$20.00</h4></div>
 				<div class="col-3 my-auto"></div>
 			</div>
 
@@ -553,7 +553,7 @@
 				<div class="col-1 my-auto"></div>
 				<div class="col-6 my-auto text-left"><h4 class="font-weight-bold">Total:</h4></div>
 				<!-- Column displaying total price -->
-				<div class="col-2 my-auto"><h4 class="font-weight-bold">$820.00</h4></div>
+				<div class="col-2 my-auto" id="total"><h4 class="font-weight-bold">$820.00</h4></div>
 				<div class="col-3 my-auto"></div>
 			</div>
 
@@ -579,7 +579,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Nike Air Jordan 1</h2>
                     <h3 style="font-weight:bold;">$240</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -599,7 +599,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Nike Air Jordan 4</h2>
                     <h3 style="font-weight:bold;">$265</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -619,7 +619,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Nike Huarache</h2>
                     <h3 style="font-weight:bold;">$170</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -639,7 +639,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Nike Air Max 97 LX</h2>
                     <h3 style="font-weight:bold;">$230</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -659,7 +659,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Nike Air Force 1</h2>
                     <h3 style="font-weight:bold;">$120</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -679,7 +679,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Nike Vaporify 4%</h2>
                     <h3 style="font-weight:bold;">$330</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -699,7 +699,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Adidas Ultraboost Black</h2>
                     <h3 style="font-weight:bold;">$250</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -719,7 +719,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Adidas NMD Triple Black</h2>
                     <h3 style="font-weight:bold;">$120</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -739,7 +739,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Adidas Pureboost</h2>
                     <h3 style="font-weight:bold;">$170</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -759,7 +759,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Adidas Falcon</h2>
                     <h3 style="font-weight:bold;">$140</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -779,7 +779,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Adidas UltraBoost White</h2>
                     <h3 style="font-weight:bold;">$250</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -799,7 +799,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Adidas Sleek</h2>
                     <h3 style="font-weight:bold;">$120</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -819,7 +819,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Vans Old Skool</h2>
                     <h3 style="font-weight:bold;">$80</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -839,7 +839,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">New Balance 608v4</h2>
                     <h3 style="font-weight:bold;">$140</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -859,7 +859,7 @@
                 <div class="col-sm col-4" style="padding:0;">
                     <h2 style="font-weight:bold; margin:0; padding:0;">Timberland Premium</h2>
                     <h3 style="font-weight:bold;">$190</h3>
-                    <button type="button" class="btn btn-danger">REMOVE</button>
+                    <button type="button" class="btn btn-danger remove">REMOVE</button>
                 </div>
                 <div class="col-sm col-4 my-auto" id="vue-app">
                     <button class="btn btn-dark btn-md" v-on:click="subtract" type="button" style="width:100%;">
@@ -945,8 +945,13 @@
         var retrieveCart = sessionStorage.getItem("cart");
         var cartCheckout = JSON.parse(retrieveCart);
         var len = cartCheckout.length;
-        console.log("Number of items in shopping cart: ", len);
+        let unique = [...new Set(cartCheckout)];
 
+        console.log(unique);
+
+
+
+       
         // Remove Items From Cart
         
         
@@ -954,9 +959,20 @@
             event.preventDefault();
             $(this).parent().hide(400);
             var t = $(this).attr('id');
-            var index = cartCheckout.indexOf(t);
-            cartCheckout.splice(index, 1);
-            sessionStorage.setItem("cart", JSON.stringify(cartCheckout));
+            var index = unique.indexOf(t);
+            unique.splice(index, 1);
+            sessionStorage.setItem("cart", JSON.stringify(unique));
+        })
+
+        
+
+        $('button.remove').click(function () { //Removes the item from cart both visually and from the cart array
+            event.preventDefault();
+            $(this).parent().parent().hide(400);
+            var t = $(this).attr('id');
+            var index = unique.indexOf(t);
+            unique.splice(index, 1);
+            sessionStorage.setItem("cart", JSON.stringify(unique));
         })
 
         //for (var i = 0; i < 15; i++) {
@@ -965,6 +981,16 @@
 
 		// we tried to use the loop :( we are sorry
         //Loop for determining the items in the cart
+        if (len == 0) {
+            document.getElementById('subTotal').innerHTML = "$" + 0;
+            document.getElementById('shipping').innerHTML = "$" + 0;
+            document.getElementById('total').innerHTML = "$" + 0;
+        } else if (len > 0) {
+            document.getElementById('subTotal').innerHTML = "$" + total;
+            document.getElementById('shipping').innerHTML = "$" + (total * 0.13 + 5);
+            document.getElementById('total').innerHTML = "$" + (total * 1.13 + 5);
+        }
+
         for (var i = 0; i < 15; i++) {
             if (cartCheckout[i] == 1) {
         		var current = document.getElementsByClassName("item1");
