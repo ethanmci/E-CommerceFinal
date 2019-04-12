@@ -124,7 +124,6 @@
                     visibility: collapse;
                     position: absolute;
                 }
-                
             }
 
             @media (max-width: 1500px) {
@@ -141,6 +140,7 @@
                     visibility: collapse;
                     position: absolute;
                 }
+
                 #main-container {
                     padding: 0 25% 0 25%;
                 }
@@ -160,6 +160,7 @@
                     visibility: collapse;
                     position: absolute;
                 }
+
                 #main-container {
                     padding: 0 25% 0 25%;
                 }
@@ -179,6 +180,7 @@
                     visibility: collapse;
                     position: absolute;
                 }
+
                 #main-container {
                     padding: 0 25% 0 25%;
                 }
@@ -198,6 +200,7 @@
                     visibility: collapse;
                     position: absolute;
                 }
+
                 #main-container {
                     padding: 0 15% 0 15%;
                 }
@@ -225,7 +228,7 @@
                 }
             }
 
-            /* hides the default "spinner" on number type inputs */ 
+            /* hides the default "spinner" on number type inputs */
             input[type=number]::-webkit-inner-spin-button,
             input[type=number]::-webkit-outer-spin-button {
                 -webkit-appearance: none;
@@ -276,7 +279,7 @@
                 //linking the 2 key html elements to variables
                 var mobileDrop = $('#mobile-dropdown');
                 var hamMenu = $('#hamburger-menu-btn');
-                //code to be executed 
+                //code to be executed
                 hamMenu.click(function () {
                     console.log("Opening hamburger menu");
                     if ($(this).find($(".fas")).hasClass('fa-bars')) {
@@ -304,6 +307,24 @@
     </header>
 
     <!------------------------------------------------PAGE CONTENTS------------------------------------------------>
+    <div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="">Success!</h5>
+                    <a role="button" href="../E-CommerceFinal/home.html" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    Order placed!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div style="padding: 3% 3%">
         <div id="main-container" class="row">
             <div class="col-8">
@@ -312,25 +333,25 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="firstname">First Name</label>
-                            <input type="text" class="form-control" id="" placeholder="John">
+                            <input type="text" class="form-control checkout-form" id="" placeholder="John">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="lastname">Last Name</label>
-                            <input type="text" class="form-control" id="" placeholder="Doe">
+                            <input type="text" class="form-control checkout-form" id="" placeholder="Doe">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        <input type="text" class="form-control checkout-form" id="inputAddress" placeholder="1234 Main St">
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity" placeholder="City Name">
+                            <input type="text" class="form-control checkout-form" id="inputCity" placeholder="City Name">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputProvince">Province</label>
-                            <select id="inputProvince" class="form-control">
+                            <select id="inputProvince" class="form-control checkout-form">
                                 <option selected>Choose...</option>
                                 <option>Alberta</option>
                                 <option>British Columbia</option>
@@ -346,7 +367,7 @@
                         </div>
                         <div class="form-group col-md-2">
                             <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
+                            <input type="text" class="form-control checkout-form" id="inputZip">
                         </div>
                     </div>
                 </form>
@@ -366,27 +387,28 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="firstname">First Name</label>
-                                <input type="text" class="form-control " id="" placeholder="John">
+                                <input type="text" class="form-control checkout-form" id="" placeholder="John">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="lastname">Last Name</label>
-                                <input type="text" class="form-control" id="" placeholder="Doe">
+                                <input type="text" class="form-control checkout-form" id="" placeholder="Doe">
                             </div>
                         </div>
                         <div class="form-group">
                             <!-- Address input -->
                             <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <input type="text" class="form-control checkout-form" id="inputAddress" placeholder="1234 Main St">
                         </div>
-                        <!-- Address input -->
+                        <!-- City input -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="City Name">
+                                <input type="text" class="form-control checkout-form" id="inputCity" placeholder="City Name">
                             </div>
+                            <!-- Province dropdown -->
                             <div class="form-group col-md-4">
                                 <label for="inputProvince">Province</label>
-                                <select id="inputProvince" class="form-control">
+                                <select id="inputProvince" class="form-control checkout-form">
                                     <!-- Options for the province selector-->
                                     <option selected>Choose...</option>
                                     <option>Alberta</option>
@@ -403,37 +425,72 @@
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
+                                <input type="text" class="form-control checkout-form" id="inputZip">
                             </div>
                         </div>
                     </fieldset>
                 </form>
                 <br />
                 <h2 style="padding-bottom:2%;">Payment Method</h2>
+                <!-- buttons that toggle between payment methods -->
+                <div style="width:100%;" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active btn-lg btn-block" id="credit-debit-btn">
+                        <input type="radio" name="options" id="" autocomplete="off" checked>
+                        <!-- Credit and debit button -->
+                        <div class="container" style="width:inherit;">
+                            <div class="row">
+                                <div class="col text-left">
+                                    Credit/Debit
+                                </div>
+                                <div class="col text-right">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-apple-pay"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="btn btn-secondary btn-lg btn-block" id="pp-btn">
+                        <input type="radio" name="options" id="" autocomplete="off">
+                        <div class="container" style="width:inherit;">
+                            <div class="row">
+                                <div class="col text-left">
+                                    Paypal
+                                </div>
+                                <div class="col text-right">
+                                    <i class="fab fa-paypal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <br />
+                <br />
                 <form>
-                    <div class="form-group">
-                        <!-- Card number input -->
-                        <label for="inputAddress">Name On Card</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Cardholder's name">
-                    </div>
-                    <div class="form-group">
-                        <!-- Card number input -->
-                        <label for="inputAddress">Card Number</label>
-                        <input type="number" class="form-control" id="inputAddress" placeholder="Debit/Credit Card Number">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-8">
-                            <label for="firstname">Expiration Date</label>
-                            <input type="text" class="form-control " id="" placeholder="MM/YY">
+                    <fieldset id="payment-info">
+                        <div class="form-group">
+                            <!-- Card number input -->
+                            <label for="inputAddress">Name On Card</label>
+                            <input type="text" class="form-control checkout-form" id="inputAddress" placeholder="Cardholder's name">
                         </div>
-                        <div class="form-group col-md-4">
-                            <label for="lastname">CVV</label>
-                            <input type="number" class="form-control" id="" placeholder="123">
+                        <div class="form-group">
+                            <!-- Card number input -->
+                            <label for="inputAddress">Card Number</label>
+                            <input type="number" class="form-control checkout-form" id="inputAddress" placeholder="Debit/Credit Card Number">
                         </div>
-                    </div>
-
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="firstname">Expiration Date</label>
+                                <input type="text" class="form-control checkout-form" id="" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="lastname">CVV</label>
+                                <input type="number" class="form-control checkout-form" id="" placeholder="123">
+                            </div>
+                        </div>
+                    </fieldset>
                 </form>
-                <button type="button" class="btn btn-success btn-lg btn-block"><b>Place Order</b></button>
+                <button id="place-order-btn" type="button" class="btn btn-success btn-lg btn-block"><b>Place Order</b></button>
             </div>
             <div class="col-4">
                 <div class="card">
@@ -441,29 +498,72 @@
                     <div class="card-body">
                         <span><h></h></span>
                         <!--  -->
-                        
+
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
 
     <script>
+        //code to "disable" the billing address area when the "same as shipping" box is ticked
         $(function () {
             var sameBtn = $('#same-as-ship');
             var billAdr = document.getElementById("billing-addr");
             sameBtn.click(function () {
                 if (sameBtn.prop('checked')) {
                     console.log("check");
-                    billAdr.disabled = true;
+                    //disabling the fields when checked
+                    $(billAdr).prop('disabled', true);
                 } else {
                     console.log("uncheck");
-                    billAdr.disabled = false;
+                    //re-enabling the fields when unchecked
+                    $(billAdr).prop('disabled', false);
                 }
             });
         });
 
+        //button to toggle the "disabled" attibute of the payment method section
+        $(function () {
+            var ppBtn = $("#pp-btn");
+            var credDebBtn = $("#credit-debit-btn");
+            var payInfo = document.getElementById("payment-info");
+            ppBtn.click(function () {
+                //disabling the forms when the "paypal" button is clicked
+                $(payInfo).prop('disabled', true);
+            });
+            credDebBtn.click(function () {
+                if ($(ppBtn).hasClass('active')) {
+                    $(payInfo).prop('disabled', false);
+                    //removing the disabled attribute when the credit/debit button is clicked
+                } else {
+                    console.log("unexpected")
+                }
+            });
+        });
+
+        //code to alert the user of any empty/unfilled
+        $(function () {
+            var orderBtn = $('#place-order-btn');
+            var billAdr = document.getElementById("billing-addr");
+            orderBtn.click(function () {
+                var emptyField = false;
+                $(".checkout-form").each(function (index) {
+                    if ($(this).val().length === 0 && !($(this).is(':disabled'))) {
+                        //adding a red border to all empty fields
+                        $(this).addClass('border border-danger');
+                        var emptyField = true;
+                    } else if ($(this).hasClass('border border-danger')) {
+                        $(this).removeClass('border border-danger');
+                    }
+                });
+                if(!emptyField){
+                    $('#confirm-modal').modal('show');
+                }
+                
+            });
+        });
     </script>
 
     <!--FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTER-->
