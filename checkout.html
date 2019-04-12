@@ -227,6 +227,7 @@
                     padding: 0 1% 0 1%;
                 }
             }
+            
 
             /* hides the default "spinner" on number type inputs */
             input[type=number]::-webkit-inner-spin-button,
@@ -496,7 +497,11 @@
                 <div class="card">
                     <h5 class="card-header">Shopping Cart Overview</h5>
                     <div class="card-body">
-                        <span><h></h></span>
+                        <span>
+                            <h5 class="subtotaltax" style="font-weight: bold;">Sub Total:  </h5><h5 id="subTotal">0</h5>
+                            <h5 class="subtotaltax" style="font-weight: bold;">Shipping & Tax:  </h5><h5 id="shipping">0</h5>
+                            <h5 style="font-weight: bold;">Total:</h5><h5 id="total">0</h5>
+                        </span>
                         <!--  -->
 
                     </div>
@@ -641,6 +646,104 @@
                 sessionStorage.setItem("product", alt);
             });
 
+            var retrieveCart = sessionStorage.getItem("cart");
+            var cartCheckout = JSON.parse(retrieveCart);
+            var len = cartCheckout.length;
+            let unique = [...new Set(cartCheckout)];
+
+            console.log(unique);
+
+
+            var data = {
+                "product": [
+                    {
+                        "price": 240,
+                    },
+                    {
+                        "price": 240,
+                    },
+                    {
+                        "price": 265,
+                    },
+                    {
+                        "price": 175,
+                    },
+                    {
+                        "price": 230,
+                    },
+                    {
+                        "price": 120,
+                    },
+                    {
+                        "price": 330,
+                    },
+                    {
+                        "price": 250,
+                    },
+                    {
+                        "price": 120,
+                    },
+                    {
+
+                        "price": 170,
+                    },
+                    {
+
+                        "price": 140,
+
+                    },
+                    {
+
+                        "price": 250,
+
+                    },
+                    {
+
+                        "price": 120,
+
+                    },
+                    {
+
+                        "price": 80,
+
+                    },
+                    {
+
+                        "price": 100,
+
+                    },
+                    {
+
+                        "price": 190,
+
+                    },
+                ]
+            }
+
+            var total = 0
+            for (var i = 0; i < len; i++) {
+                var ind = cartCheckout[i];
+                var currentPrice = data.product[ind].price;
+                total = total + currentPrice;
+                console.log(total);
+            }
+            var tax = (total * 0.13 + 5)
+            var roundTax = Math.round(tax);
+            var totalTotal = 0;
+            totalTotal = total + tax;
+            var roundTotal = Math.round(totalTotal);
+
+            if (len == 0) {
+                document.getElementById('subTotal').innerHTML = "$" + 0;
+                document.getElementById('shipping').innerHTML = "$" + 0;
+                document.getElementById('total').innerHTML = "$" + 0;
+            }
+            else if (len > 0) {
+                document.getElementById('subTotal').innerHTML = "$" + total
+                document.getElementById('shipping').innerHTML = "$" + (roundTax);
+                document.getElementById('total').innerHTML = "$" + (roundTotal);
+            }
+
         </script>
 
 
@@ -650,7 +753,7 @@
                     <h3>Navigation</h3>
                     <ul>
                         <li><a href="../E-CommerceFinal/home.html">Home</a></li>
-                        <li><a href="../E-CommerceFinal/products.html">Shop for Memes</a></li>
+                        <li><a href="../E-CommerceFinal/products.html">Shop for Shoes</a></li>
                         <li><a href="../E-CommerceFinal/about.html">About</a></li>
                         <li><a href="../E-CommerceFinal/cart.html">Cart</a></li>
                     </ul>
@@ -685,7 +788,7 @@
 
 
         <div class="footerEnd">
-            Not Copyrighted at all lmao we illigally sell memes to the public<i class="fas fa-american-sign-language-interpreting"></i>
+            Made by Ethan McIntyre, Jacob Lapish, and Andrew Holland  <i class="fas fa-american-sign-language-interpreting"></i>
         </div>
 
     </footer>
