@@ -576,18 +576,11 @@
         </style>
 
         <script>
-            $("#PicID a").click(function () {
-                var alt = $(this).children("img").attr("alt");
-                sessionStorage.setItem("product", alt);
-            });
 
             var retrieveCart = sessionStorage.getItem("cart");
             var cartCheckout = JSON.parse(retrieveCart);
             var len = cartCheckout.length;
             let unique = [...new Set(cartCheckout)];
-
-            console.log(unique);
-
 
             var data = {
                 "product": [

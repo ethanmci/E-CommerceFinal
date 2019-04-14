@@ -869,46 +869,71 @@
 
 
     <script>
-
-
-
-
-        //Keeps track of the products
-        var total2 = 0;
-        var array = [];
+    //Keeps track of the products
+        var totalTotal = 0;
+        var total = 0;
+        var total2 = sessionStorage.getItem("total");
+        //sessionStorage.removeItem("total");
+        
         var retrieveCart = sessionStorage.getItem("cart");
         var cartCheckout = JSON.parse(retrieveCart);
-        var len = cartCheckout.length;
         let unique = [...new Set(cartCheckout)];
-
+        var len = unique.length;
         console.log(unique);
 
 
         $(document).on('click', '.qty-plus', function () {
             $(this).prev().val(+$(this).prev().val() + 1);
-            var amount = $(this).prev().val()
             var shoeID2 = $(this).parent().parent().parent().parent().attr('id');
-            var productPrice2 = data.product[shoeID2].price * amount;
-            array[shoeID2 - 1] = productPrice2;
-            total2 = total2 + data.product[shoeID2].price;
-            for (var i = 0; i < len; i++) {
-                total2 = total2 + array[i];
-                console.log(array);
-            }
-            
+            total = total + data.product[shoeID2].price;
+            //sessionStorage.setItem("total", total);
+
+            var tax = (total * 0.13 + 5)
+            var roundTax = Math.round(tax);
+            totalTotal = total + tax;
+            var roundTotal = Math.round(totalTotal);
+
+
+
+            document.getElementById('subTotal').innerHTML = "$" + (total);
+            document.getElementById('shipping').innerHTML = "$" + (roundTax);
+            document.getElementById('total').innerHTML = "$" + (roundTotal);
+
+            if (sessionStorage.amounts) {
+                    amounts = JSON.parse(sessionStorage.getItem('amounts'));
+                } else {
+                    amounts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                }
+            amounts[shoeID2] = $(this).prev().val();
+            sessionStorage.setItem('amounts', JSON.stringify(amounts));
         });
+
+
         $(document).on('click', '.qty-minus', function () {
-            if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-            var amount = $(this).next().val()
             var shoeID = $(this).parent().parent().parent().parent().attr('id');
-            var productPrice = data.product[shoeID].price * amount;
-            array[shoeID - 1] = productPrice;
-            total2 = total2 - data.product[shoeID].price;
-            for (var i = 0; i < len; i++) {
-                total2 = total2 + array[i];
-                console.log(array);
+            if ($(this).next().val() > 0) {
+                $(this).next().val(+$(this).next().val() - 1);
+                total = total - data.product[shoeID].price;  
             }
             
+            //sessionStorage.setItem("total", total);
+
+            var tax = (total * 0.13 + 5)
+            var roundTax = Math.round(tax);
+            totalTotal = total + tax;
+            var roundTotal = Math.round(totalTotal);
+
+            document.getElementById('subTotal').innerHTML = "$" + (total);
+            document.getElementById('shipping').innerHTML = "$" + (roundTax);
+            document.getElementById('total').innerHTML = "$" + (roundTotal);
+
+            if (sessionStorage.amounts) {
+                    amounts = JSON.parse(sessionStorage.getItem('amounts'));
+                } else {
+                    amounts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                }
+            amounts[shoeID] = $(this).next().val();
+            sessionStorage.setItem('amounts', JSON.stringify(amounts));
         });
 
        
@@ -923,11 +948,25 @@
             var index = unique.indexOf(t);
             unique.splice(index, 1);
             sessionStorage.setItem("cart", JSON.stringify(unique));
+
+
+            amounts = JSON.parse(sessionStorage.getItem('amounts'));
+            currentAmount = amounts[t];
+            total = total - (currentAmount * data.product[t].price);
+            
+
+            var tax = (total * 0.13 + 5)
+            var roundTax = Math.round(tax);
+            totalTotal = total + tax;
+            var roundTotal = Math.round(totalTotal);
+            document.getElementById('subTotal').innerHTML = "$" + (total);
+            document.getElementById('shipping').innerHTML = "$" + (roundTax);
+            document.getElementById('total').innerHTML = "$" + (roundTotal);
         })
 
         
 
-        $('button.remove').click(function () { //Removes the item from cart both visually and from the cart array
+        $('button.remove').click(function () { //Removes the item from cart both visually and from the cart array mobile
             event.preventDefault();
             $(this).parent().parent().hide(400);
             var t = $(this).attr('id');
@@ -1100,9 +1139,6 @@
         }
 
 
-
-
-
         var data = {
             "product": [
                 {
@@ -1169,17 +1205,17 @@
             ]
         }
 
-        var total = 0
+        console.log(len);
         for (var i = 0; i < len; i++) {
-            var ind = cartCheckout[i];
+            var ind = unique[i];
             var currentPrice = data.product[ind].price;
             total = total + currentPrice;
-            
         }
 
+        
+        //total2 = sessionStorage.getItem("total", total2);
         var tax = (total * 0.13 + 5)
         var roundTax = Math.round(tax);
-        var totalTotal = 0;
         totalTotal = total + tax;
         var roundTotal = Math.round(totalTotal);
 
@@ -1189,13 +1225,11 @@
             document.getElementById('subTotal').innerHTML = "$" + 0;
             document.getElementById('shipping').innerHTML = "$" + 0;
             document.getElementById('total').innerHTML = "$" + 0;
-        }
-        else if (len > 0) {
+        }else if (len > 0) {
             document.getElementById('subTotal').innerHTML = "$" + (total);
             document.getElementById('shipping').innerHTML = "$" + (roundTax);
             document.getElementById('total').innerHTML = "$" + (roundTotal);
         }
-
 
 
 
