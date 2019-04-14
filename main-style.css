@@ -494,3 +494,31 @@ uhoh h2, uhoh h3{
     padding: 2%;
     border: 2px solid black;
 }
+
+.notInCart {
+    visibility: collapse;
+    position: absolute
+}
+
+a.remove {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: .5em;
+    font-size: .75em;
+    display: inline-block;
+    border-radius: 100%;
+    line-height: .85;
+    @include transition(all, .25s, linear);
+    &:hover
+
+{
+    background: #f30;
+}
+
+}
+
+.inCart {
+    visibility: visible;
+    position: relative;
+}
