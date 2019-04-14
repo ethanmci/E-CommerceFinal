@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="icon" href="../E-CommerceFinal/tempImage/sickkicks.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main-style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
+        <div class="row">
+            <!--LOGO-->
+            <div id="logo" class="col-1" style="padding: 1%;">
+                <a class="btn" href="../E-CommerceFinal/home.html" role="button">
+                    <img src="../E-CommerceFinal/tempImage/sickkickswhite.png" height="34" width="50" />
+                </a>
+
+            </div>
+            <div class="col-7" style="padding: 0%;" id="center-col">
+                <!--MAIN NAV BUTTONS-->
+                <nav class="navigation" role="Navigation">
+                    <ul>
+                        <li><a href="../E-CommerceFinal/home.html">Home</a></li>
+                        <li id="dropdown-toggle">
+                            <a href="../E-CommerceFinal/products.html">Shop for Shoes  <i class="fa fa-caret-down"></i></a>
+                            <ul id="dropdown">
+                                <li><a href="../E-CommerceFinal/products.html">Mens</a></li>
+                                <li><a href="../E-CommerceFinal/products.html">Womens</a></li>
+                                <li><a href="../E-CommerceFinal/products.html">Nike</a></li>
+                                <li><a href="../E-CommerceFinal/products.html">Adidas</a></li>
+                                <li><a href="../E-CommerceFinal/products.html">Other</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../E-CommerceFinal/about.html">About</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!--SECONDARY NAV BUTTONS-->
+            <div class="col text-right" style="padding: 1%;">
+                <div class="form-inline" style="float: right;">
+                    <a class="btn btn-outline-dark" href="../E-CommerceFinal/cart.html" role="button">
+                        <i class="fas fa-shopping-cart fa-1x"></i>
+                    </a>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
+                            <button type="button" class="btn btn-outline-dark" id="search-btn" onclick="window.location.href = '../E-CommerceFinal/products.html';">
+                                <i class="fas fa-search fa-1x"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="hamburger my-auto" style="float: right;">
+                    <a class="btn btn-outline-dark" id="hamburger-menu-btn" role="button">
+                        <i class="fas fa-bars fa-2x" style="color:white;"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!--MOBILE DROP DOWN HEADER-->
+    <div id="mobile-dropdown">
+        <ul>
+            <li>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search" id="search-input" class="form-control mx-sm-3 " aria-describedby="passwordHelpInline">
+
+                    </form>
+                </div>
+            </li>
+            <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">Home</a></li>
+            <li id="MDB_dropdown-toggle">
+                <a class="btn btn-lg btn-block" href="../E-CommerceFinal/products.html" role="button">Shop for Shoes  <i class="fa fa-caret-down"></i></a>
+                <!--DROP DOWN FOR THE MOBILE PRODUCTS BUTTON-->
+                <ul id="MDB_dropdown">
+                    <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Men's</a></li>
+                    <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Women's</a></li>
+                    <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Nike</a></li>
+                    <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Adidas</a></li>
+                    <li><a class="MDB" href="../E-CommerceFinal/products.html" role="button">Other</a></li>
+                </ul>
+            </li>
+
+            <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/home.html" role="button">About</a></li>
+            <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/cart.html" role="button">Cart  <i class="fas fa-shopping-cart fa-1x"></i></a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

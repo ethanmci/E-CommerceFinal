@@ -1,21 +1,23 @@
 ﻿<!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<link rel="icon" href="../E-CommerceFinal/tempImage/sickkicks.png">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="main-style.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>About</title>
+    <link rel="icon" href="../E-CommerceFinal/tempImage/sickkicks.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main-style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-	<!----------------------------------------------------------------------------------HEADER HEADER HEADER HEADER---------------------------------------------------------------------------------->
-    <header>
+    <!----------------------------------------------------------------------------------HEADER HEADER HEADER HEADER---------------------------------------------------------------------------------->
+    <header id="header-insert">
         <div id="main-header" class="container-fluid" style="margin:0; padding-left: 5%; padding-right: 5%;">
             <div class="row">
                 <!--LOGO-->
@@ -103,123 +105,54 @@
                 <li><a class="btn  btn-lg btn-block" href="../E-CommerceFinal/cart.html" role="button">Cart  <i class="fas fa-shopping-cart fa-1x"></i></a></li>
             </ul>
         </div>
-        <style>
-        </style>
-        <script>
 
-
-            // $('#search-input').hide();
-            $('#mobile-dropdown').hide();
-
-            //code to hide & show search bar
-            //$(function () {
-            //  var searchBtn = $('#search-btn');
-            //var searchIn = $('#search-input');
-            //searchBtn.click(function () {
-            //  searchIn.toggle("slide").focus();
-            //});
-            // });
-
-            $('#dropdown').hide();
-            $('#dropdown-toggle').hover(
-                function () {
-                    console.log("Opening hidden menu");
-                    $('#dropdown').slideDown(200);
-                },
-                function () {
-                    console.log("Closing hidden menu");
-                    $('#dropdown').slideUp(300);
-                }
-            );
-
-            $('#MDB_dropdown').hide();
-            $('#MDB_dropdown-toggle').hover(
-                function () {
-                    console.log("Opening hidden menu");
-                    $('#MDB_dropdown').slideDown(200);
-                },
-                function () {
-                    console.log("Closing hidden menu");
-                    $('#MDB_dropdown').slideUp(300);
-                }
-            );
-
-            //function for mobile menu dropdown animation
-            $(function () {
-                //linking the 2 key html elements to variables
-                var mobileDrop = $('#mobile-dropdown');
-                var hamMenu = $('#hamburger-menu-btn');
-                //code to be
-                hamMenu.click(function () {
-                    console.log("Opening hamburger menu");
-                    if ($(this).find($(".fas")).hasClass('fa-bars')) {
-                        console.log("Found");
-                        //replacing the hamburger menu icon with an "x" icon
-                        $(this).find($(".fas")).removeClass('fa-bars').addClass('fa-times');
-                        //background changes to red
-                        $(this).css("background-color", "tomato");
-                    } else if ($(this).find($(".fas")).hasClass('fa-times')) {
-                        console.log("Found");
-                        //replacing the "x" icon with the hamburger
-                        $(this).find($(".fas")).removeClass('fa-times').addClass('fa-bars');
-                        //resetting the background colour to default (black)
-                        $(this).css("background-color", "black");
-                    } else {
-                        //else statement if something unexpected happens
-                        console.log("unexpected error!");
-                    }
-                    //toggle slide jquery animation
-                    mobileDrop.slideToggle(250);
-
-                });
-            });
-        </script>
     </header>
-	<!------------------------------------------------PAGE CONTENTS------------------------------------------------>
-	<style>
-		.about, .aboutImage {
-			text-align: center;
-		}
+    <script src="header-script.js" type="text/javascript"></script>
+    <!------------------------------------------------PAGE CONTENTS------------------------------------------------>
+    <style>
+        .about, .aboutImage {
+            text-align: center;
+        }
 
-		.aboutWord {
-			display: inline-block;
-			position: relative;
-			margin-top: 5%;
-			margin-bottom: 5%;
-		}
+        .aboutWord {
+            display: inline-block;
+            position: relative;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
 
-		.supplyWord {
-			margin-top: 5%;
-		}
+        .supplyWord {
+            margin-top: 5%;
+        }
 
-		.supply {
-			display: inline-block;
-			position: relative;
-			margin-top: 5%;
-			margin-bottom: 5%;
-		}
-	</style>
-	<!--main about section-->
-	<div class="about w-100">
-		<h1 class="aboutWord"><div style="font-weight: bold">About Us</div></h1>
-		<h4 class="aboutDescription">
-			We are Sick Kicks, supplying you with you're favourite shoe from you're favourite brand, at retail price.<h4 />
-			<h4>Do you rep that Adidas squat, or are you more of a checks over stripes kinda person?</h4>
-			<h4>Whatever you're preference, Sick Kicks is the home for all of you're shoe buying needs. </h4>
-			<h1 class="supplyWord"><div style="font-weight: bold">Suppliers</div></h1>
-	</div>
-	<!--supplier section-->
-	<div class="aboutImage">
-		<img class="supply" src="../E-CommerceFinal/tempImage/nike.jpg" height="30%" width="30%" />
-		<img class="supply" src="../E-CommerceFinal/tempImage/adidas.jpg" height="30%" width="30%" />
-		<img class="supply" src="../E-CommerceFinal/tempImage/puma.jpg" height="30%" width="30%" />
-		<img class="supply" src="../E-CommerceFinal/tempImage/newbalance.jpg" height="30%" width="30%" />
-		<img class="supply" src="../E-CommerceFinal/tempImage/vans.jpg" height="30%" width="30%" />
-		<img class="supply" src="../E-CommerceFinal/tempImage/timbs.jpg" height="30%" width="30%" />
-	</div>
+        .supply {
+            display: inline-block;
+            position: relative;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    </style>
+    <!--main about section-->
+    <div class="about w-100">
+        <h1 class="aboutWord"><div style="font-weight: bold">About Us</div></h1>
+        <h4 class="aboutDescription">
+            We are Sick Kicks, supplying you with you're favourite shoe from you're favourite brand, at retail price.<h4 />
+            <h4>Do you rep that Adidas squat, or are you more of a checks over stripes kinda person?</h4>
+            <h4>Whatever you're preference, Sick Kicks is the home for all of you're shoe buying needs. </h4>
+            <h1 class="supplyWord"><div style="font-weight: bold">Suppliers</div></h1>
+    </div>
+    <!--supplier section-->
+    <div class="aboutImage">
+        <img class="supply" src="../E-CommerceFinal/tempImage/nike.jpg" height="30%" width="30%" />
+        <img class="supply" src="../E-CommerceFinal/tempImage/adidas.jpg" height="30%" width="30%" />
+        <img class="supply" src="../E-CommerceFinal/tempImage/puma.jpg" height="30%" width="30%" />
+        <img class="supply" src="../E-CommerceFinal/tempImage/newbalance.jpg" height="30%" width="30%" />
+        <img class="supply" src="../E-CommerceFinal/tempImage/vans.jpg" height="30%" width="30%" />
+        <img class="supply" src="../E-CommerceFinal/tempImage/timbs.jpg" height="30%" width="30%" />
+    </div>
 
-	<!-----------------------------------------------------------------------------------FOOTER FOOTER---------------------------------------------------------------------------------->
-	<footer>
+    <!-----------------------------------------------------------------------------------FOOTER FOOTER---------------------------------------------------------------------------------->
+    <footer>
 
         <div class="footerWrapper">
             <div class="footer">
@@ -265,6 +198,6 @@
             Made by Ethan McIntyre, Jacob Lapish, and Andrew Holland  <i class="fas fa-american-sign-language-interpreting"></i>
         </div>
 
-	</footer>
+    </footer>
 </body>
 </html>
