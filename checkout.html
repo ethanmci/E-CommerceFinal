@@ -401,7 +401,7 @@
                 <form>
                     <fieldset id="payment-info">
                         <div class="form-group">
-                            <!-- Card number input -->
+                            <!-- Card name input -->
                             <label for="inputAddress">Name On Card</label>
                             <input type="text" class="form-control checkout-form" id="inputAddress" placeholder="Cardholder's name">
                         </div>
@@ -411,10 +411,12 @@
                             <input type="number" class="form-control checkout-form" id="inputAddress" placeholder="Debit/Credit Card Number">
                         </div>
                         <div class="form-row">
+                            <!-- Card expiration input -->
                             <div class="form-group col-md-8">
                                 <label for="firstname">Expiration Date</label>
                                 <input type="text" class="form-control checkout-form" id="" placeholder="MM/YY">
                             </div>
+                            <!-- Card CVV input -->
                             <div class="form-group col-md-4">
                                 <label for="lastname">CVV</label>
                                 <input type="number" class="form-control checkout-form" id="" placeholder="123">
@@ -577,96 +579,24 @@
 
         <script>
 
+            // All variables below used to calculate the total based on items
             var retrieveCart = sessionStorage.getItem("cart");
             var cartCheckout = JSON.parse(retrieveCart);
-            var len = cartCheckout.length;
             let unique = [...new Set(cartCheckout)];
-
-            var data = {
-                "product": [
-                    {
-                        "price": 240,
-                    },
-                    {
-                        "price": 240,
-                    },
-                    {
-                        "price": 265,
-                    },
-                    {
-                        "price": 175,
-                    },
-                    {
-                        "price": 230,
-                    },
-                    {
-                        "price": 120,
-                    },
-                    {
-                        "price": 330,
-                    },
-                    {
-                        "price": 250,
-                    },
-                    {
-                        "price": 120,
-                    },
-                    {
-
-                        "price": 170,
-                    },
-                    {
-
-                        "price": 140,
-
-                    },
-                    {
-
-                        "price": 250,
-
-                    },
-                    {
-
-                        "price": 120,
-
-                    },
-                    {
-
-                        "price": 80,
-
-                    },
-                    {
-
-                        "price": 100,
-
-                    },
-                    {
-
-                        "price": 190,
-
-                    },
-                ]
-            }
-
-            var total = 0
-            for (var i = 0; i < len; i++) {
-                var ind = cartCheckout[i];
-                var currentPrice = data.product[ind].price;
-                total = total + currentPrice;
-                console.log(total);
-            }
+            var len = unique.length;
+            var total = JSON.parse(sessionStorage.getItem('total'));
             var tax = (total * 0.13 + 5)
             var roundTax = Math.round(tax);
             var totalTotal = 0;
             totalTotal = total + tax;
             var roundTotal = Math.round(totalTotal);
 
-            if (len == 0) {
+            if (len == 0) { // displays the total as 0 if there are no items
                 document.getElementById('subTotal').innerHTML = "$" + 0;
                 document.getElementById('shipping').innerHTML = "$" + 0;
                 document.getElementById('total').innerHTML = "$" + 0;
             }
-            else if (len > 0) {
+            else if (len > 0) { // displays the total from the cart page
                 document.getElementById('subTotal').innerHTML = "$" + total
                 document.getElementById('shipping').innerHTML = "$" + (roundTax);
                 document.getElementById('total').innerHTML = "$" + (roundTotal);
